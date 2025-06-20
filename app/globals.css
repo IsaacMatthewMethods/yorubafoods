@@ -55,6 +55,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    padding-bottom: env(safe-area-inset-bottom);
   }
 }
 
@@ -161,4 +162,148 @@
   100% {
     background-position: 200% 0;
   }
+}
+
+/* Bottom Navigation Styles */
+.bottom-nav-item {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bottom-nav-item:active {
+  transform: scale(0.95);
+}
+
+/* Smooth scrolling for better UX */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 768px) {
+  .bottom-nav-item {
+    min-height: 3rem; /* 48px - minimum touch target size */
+    min-width: 3rem;
+  }
+}
+
+/* Add subtle animation for active state */
+.bottom-nav-active {
+  animation: bottomNavPulse 0.3s ease-out;
+}
+
+@keyframes bottomNavPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Improve backdrop blur support */
+@supports (backdrop-filter: blur(12px)) {
+  .bottom-nav-blur {
+    backdrop-filter: blur(12px);
+  }
+}
+
+@supports not (backdrop-filter: blur(12px)) {
+  .bottom-nav-blur {
+    background-color: rgba(255, 255, 255, 0.98);
+  }
+
+  .dark .bottom-nav-blur {
+    background-color: rgba(0, 0, 0, 0.98);
+  }
+}
+
+/* Safe area support for devices with notches */
+.safe-area-inset-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Ensure proper spacing on all devices */
+@supports (padding: max(0px)) {
+  .safe-area-inset-bottom {
+    padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* Improve bottom navigation visual hierarchy */
+.bottom-nav-container {
+  box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dark .bottom-nav-container {
+  box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.3), 0 -2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Improve touch feedback */
+@media (hover: none) and (pointer: coarse) {
+  .bottom-nav-item:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease-out;
+  }
+}
+
+/* Ensure content is properly spaced from bottom nav */
+.main-content {
+  padding-bottom: 5rem; /* 80px */
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 768px) {
+  /* Keep bottom nav visible on larger screens for consistency */
+  .bottom-nav-container {
+    max-width: 28rem; /* 448px - matches max-w-md */
+    margin: 0 auto;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .bottom-nav-item {
+    transition: none;
+  }
+
+  .bottom-nav-active {
+    animation: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .bottom-nav-container {
+    border-top: 2px solid;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+.bottom-nav-item:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+/* Ensure proper z-index stacking */
+.bottom-nav {
+  z-index: 40;
+}
+
+/* Prevent content from being hidden behind bottom nav */
+.main-content {
+  padding-bottom: 5rem; /* 80px */
+}
+
+/* Improve visual separation */
+.bottom-nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, hsl(var(--border)), transparent);
 }

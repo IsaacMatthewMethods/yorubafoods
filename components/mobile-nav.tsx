@@ -3,19 +3,29 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, X, Sun, Moon, Home, Book, Search, Info, MessageSquare, User, Settings } from "lucide-react"
+import { Menu, X, Sun, Moon, Home, Book, Search, Info, MessageSquare, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
 import { cn } from "@/lib/utils"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { useAuth } from "@/contexts/auth-context"
+
+// This would come from your auth provider in a real app
+const useAuth = () => {
+  // Mock authentication state - replace with real auth in production
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+  // For demo purposes only
+  const toggleLogin = () => setIsLoggedIn(!isLoggedIn)
+
+  return { isLoggedIn, toggleLogin }
+}
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
   const { theme, setTheme } = useTheme()
-  const { user, isAdmin, signOut, isLoading } = useAuth()
+  const { isLoggedIn, toggleLogin } = useAuth()
 
   const toggleMenu = () => setIsOpen(!isOpen)
   const closeMenu = () => setIsOpen(false)
@@ -60,10 +70,10 @@ export default function MobileNav() {
             {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </Button>
 
-          {!isLoading && user && (
+          {isLoggedIn && (
             <Avatar className="h-8 w-8">
-              <AvatarImage src="/placeholder.svg?height=32&width=32" alt={user.email || "User"} />
-              <AvatarFallback>{user.email?.charAt(0).toUpperCase() || "U"}</AvatarFallback>
+              <AvatarImage src="/placeholder.svg?height=32&width=32" alt="User" />
+              <AvatarFallback>U</AvatarFallback>
             </Avatar>
           )}
 
@@ -91,21 +101,7 @@ export default function MobileNav() {
               </Link>
             ))}
 
-            {isAdmin && (
-              <Link
-                href="/admin"
-                className={cn(
-                  "flex items-center gap-3 px-3 py-3 rounded-lg transition-colors",
-                  pathname.startsWith("/admin") ? "bg-primary/10 text-primary font-medium" : "hover:bg-accent",
-                )}
-                onClick={closeMenu}
-              >
-                <Settings className="h-5 w-5" />
-                Admin Dashboard
-              </Link>
-            )}
-
-            {!isLoading && !user ? (
+            {!isLoggedIn ? (
               <Link
                 href="/login"
                 className="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-accent"
@@ -119,7 +115,7 @@ export default function MobileNav() {
                 variant="ghost"
                 className="justify-start gap-3 px-3 py-3 h-auto rounded-lg hover:bg-accent"
                 onClick={() => {
-                  signOut()
+                  toggleLogin()
                   closeMenu()
                 }}
               >

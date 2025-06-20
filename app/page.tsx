@@ -5,16 +5,52 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ChevronRight, Search, Utensils, Info, MessageSquare } from "lucide-react"
 import CategoryCard from "@/components/category-card"
 import FoodCard from "@/components/food-card"
-import { getSupabaseServerClient } from "@/lib/supabase"
 
-export default async function Home() {
-  const supabase = getSupabaseServerClient()
+export default function Home() {
+  const featuredCategories = [
+    {
+      id: "soups",
+      name: "Soups",
+      description: "Traditional Yoruba soups with rich flavors and nutritional benefits",
+      image: "/placeholder.svg?height=800&width=600",
+    },
+    {
+      id: "swallows",
+      name: "Swallows",
+      description: "Starchy accompaniments perfect for enjoying with Yoruba soups",
+      image: "/placeholder.svg?height=800&width=600",
+    },
+    {
+      id: "snacks",
+      name: "Snacks",
+      description: "Delicious small bites and pastries for any time of day",
+      image: "/placeholder.svg?height=800&width=600",
+    },
+  ]
 
-  // Fetch featured categories (limit to 3)
-  const { data: featuredCategories } = await supabase.from("categories").select("*").order("name").limit(3)
-
-  // Fetch featured foods
-  const { data: featuredFoods } = await supabase.from("foods").select("*").eq("featured", true).order("name").limit(3)
+  const featuredFoods = [
+    {
+      id: "amala-ewedu",
+      name: "Amala & Ewedu",
+      description: "A classic Yoruba combination of yam flour swallow with jute leaf soup",
+      image: "/placeholder.svg?height=800&width=600",
+      videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
+    },
+    {
+      id: "jollof-rice",
+      name: "Jollof Rice",
+      description: "Spicy tomato rice dish popular throughout West Africa",
+      image: "/placeholder.svg?height=800&width=600",
+      videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
+    },
+    {
+      id: "moin-moin",
+      name: "Moin Moin",
+      description: "Steamed bean pudding with peppers, onions, and spices",
+      image: "/placeholder.svg?height=800&width=600",
+      videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
+    },
+  ]
 
   return (
     <main className="w-full px-4 py-6 mt-16">
@@ -80,51 +116,47 @@ export default async function Home() {
         </div>
 
         {/* Featured Categories */}
-        {featuredCategories && featuredCategories.length > 0 && (
-          <div className="space-y-4">
-            <div className="flex justify-between items-center">
-              <h2 className="text-xl font-semibold">Featured Categories</h2>
-              <Link href="/categories" className="text-yoruba-500 text-sm font-medium flex items-center">
-                View All <ChevronRight className="h-4 w-4" />
-              </Link>
-            </div>
-            <div className="grid gap-4">
-              {featuredCategories.map((category) => (
-                <CategoryCard
-                  key={category.id}
-                  id={category.slug}
-                  name={category.name}
-                  description={category.description || ""}
-                  image={category.image_url || "/placeholder.svg?height=800&width=600"}
-                />
-              ))}
-            </div>
+        <div className="space-y-4">
+          <div className="flex justify-between items-center">
+            <h2 className="text-xl font-semibold">Featured Categories</h2>
+            <Link href="/categories" className="text-yoruba-500 text-sm font-medium flex items-center">
+              View All <ChevronRight className="h-4 w-4" />
+            </Link>
           </div>
-        )}
+          <div className="grid gap-4">
+            {featuredCategories.map((category) => (
+              <CategoryCard
+                key={category.id}
+                id={category.id}
+                name={category.name}
+                description={category.description}
+                image={category.image}
+              />
+            ))}
+          </div>
+        </div>
 
         {/* Featured Foods */}
-        {featuredFoods && featuredFoods.length > 0 && (
-          <div className="space-y-4">
-            <div className="flex justify-between items-center">
-              <h2 className="text-xl font-semibold">Featured Foods</h2>
-              <Link href="/categories" className="text-yoruba-500 text-sm font-medium flex items-center">
-                View All <ChevronRight className="h-4 w-4" />
-              </Link>
-            </div>
-            <div className="grid gap-4">
-              {featuredFoods.map((food) => (
-                <FoodCard
-                  key={food.id}
-                  id={food.slug}
-                  name={food.name}
-                  description={food.description || ""}
-                  image={food.image_url || "/placeholder.svg?height=800&width=600"}
-                  videoId={food.video_id || undefined}
-                />
-              ))}
-            </div>
+        <div className="space-y-4">
+          <div className="flex justify-between items-center">
+            <h2 className="text-xl font-semibold">Featured Foods</h2>
+            <Link href="/categories" className="text-yoruba-500 text-sm font-medium flex items-center">
+              View All <ChevronRight className="h-4 w-4" />
+            </Link>
           </div>
-        )}
+          <div className="grid gap-4">
+            {featuredFoods.map((food) => (
+              <FoodCard
+                key={food.id}
+                id={food.id}
+                name={food.name}
+                description={food.description}
+                image={food.image}
+                videoId={food.videoId}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </main>
   )

@@ -1,35 +1,59 @@
 import CategoryCard from "@/components/category-card"
-import { getSupabaseServerClient } from "@/lib/supabase"
 
-export default async function CategoriesPage() {
-  const supabase = getSupabaseServerClient()
+const categories = [
+  {
+    id: "soups",
+    name: "Soups",
+    description: "Traditional Yoruba soups with rich flavors and nutritional benefits",
+    image: "/placeholder.svg?height=800&width=600",
+  },
+  {
+    id: "swallows",
+    name: "Swallows",
+    description: "Starchy accompaniments perfect for enjoying with Yoruba soups",
+    image: "/placeholder.svg?height=800&width=600",
+  },
+  {
+    id: "rice-dishes",
+    name: "Rice Dishes",
+    description: "Flavorful rice preparations that showcase Yoruba culinary expertise",
+    image: "/placeholder.svg?height=800&width=600",
+  },
+  {
+    id: "snacks",
+    name: "Snacks",
+    description: "Delicious small bites and pastries for any time of day",
+    image: "/placeholder.svg?height=800&width=600",
+  },
+  {
+    id: "drinks",
+    name: "Drinks",
+    description: "Traditional beverages that complement Yoruba meals perfectly",
+    image: "/placeholder.svg?height=800&width=600",
+  },
+  {
+    id: "festival-foods",
+    name: "Festival Foods",
+    description: "Special dishes prepared for celebrations and cultural events",
+    image: "/placeholder.svg?height=800&width=600",
+  },
+]
 
-  const { data: categories, error } = await supabase.from("categories").select("*").order("name")
-
-  if (error) {
-    console.error("Error fetching categories:", error)
-  }
-
+export default function CategoriesPage() {
   return (
     <main className="w-full px-4 py-6 mt-16">
       <h1 className="text-2xl font-bold mb-6">Food Categories</h1>
 
       <div className="grid gap-4">
-        {categories && categories.length > 0 ? (
-          categories.map((category) => (
-            <CategoryCard
-              key={category.id}
-              id={category.slug}
-              name={category.name}
-              description={category.description || ""}
-              image={category.image_url || "/placeholder.svg?height=800&width=600"}
-            />
-          ))
-        ) : (
-          <div className="text-center p-8 border rounded-lg">
-            <p className="text-muted-foreground">No categories found</p>
-          </div>
-        )}
+        {categories.map((category) => (
+          <CategoryCard
+            key={category.id}
+            id={category.id}
+            name={category.name}
+            description={category.description}
+            image={category.image}
+          />
+        ))}
       </div>
     </main>
   )

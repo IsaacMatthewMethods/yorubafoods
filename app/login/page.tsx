@@ -8,38 +8,24 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Loader2 } from "lucide-react"
-import { useAuth } from "@/contexts/auth-context"
-import Link from "next/link"
-import { toast } from "@/components/ui/use-toast"
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
-  const { signIn } = useAuth()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
 
-    try {
-      await signIn(email, password)
-      router.push("/")
-      toast({
-        title: "Login successful",
-        description: "You have been logged in successfully.",
-      })
-    } catch (error) {
-      console.error("Login error:", error)
-      toast({
-        title: "Login failed",
-        description: "Please check your credentials and try again.",
-        variant: "destructive",
-      })
-    } finally {
+    // Simulate login - in a real app, this would call your auth API
+    setTimeout(() => {
       setIsLoading(false)
-    }
+      // Redirect to home page after "login"
+      router.push("/")
+      // In a real app, you would set auth state here
+    }, 1500)
   }
 
   return (
@@ -96,9 +82,9 @@ export default function LoginPage() {
             </Button>
             <div className="text-center text-sm">
               Don't have an account?{" "}
-              <Link href="/register" className="text-yoruba-500 hover:underline">
+              <a href="#" className="text-yoruba-500 hover:underline">
                 Sign up
-              </Link>
+              </a>
             </div>
           </form>
         </CardContent>

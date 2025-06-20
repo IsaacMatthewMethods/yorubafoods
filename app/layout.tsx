@@ -4,7 +4,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import MobileNav from "@/components/mobile-nav"
-import { AuthProvider } from "@/contexts/auth-context"
+import BottomNav from "@/components/bottom-nav"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -24,12 +24,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <AuthProvider>
-            <div className="flex flex-col min-h-screen max-w-md mx-auto">
-              <MobileNav />
-              <div className="flex-1 w-full">{children}</div>
-            </div>
-          </AuthProvider>
+          <div className="flex flex-col min-h-screen max-w-md mx-auto">
+            <MobileNav />
+            <div className="flex-1 w-full pb-20">{children}</div>
+            <BottomNav />
+          </div>
         </ThemeProvider>
       </body>
     </html>

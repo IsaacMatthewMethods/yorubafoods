@@ -92,7 +92,7 @@ export default function AiChatInterface() {
   }
 
   return (
-    <div className="flex flex-col h-[calc(100vh-16rem)]">
+    <div className="flex flex-col h-[calc(100vh-20rem)]">
       <Card className="flex-1 overflow-hidden">
         <CardContent className="p-4 h-full flex flex-col">
           <div className="flex-1 overflow-y-auto space-y-4 pb-4">
@@ -130,7 +130,7 @@ export default function AiChatInterface() {
         </CardContent>
       </Card>
 
-      <form onSubmit={handleSendMessage} className="mt-4 flex gap-2">
+      <form onSubmit={handleSendMessage} className="mt-4 flex gap-2 mb-4">
         <Input
           type="text"
           placeholder="Type your message..."

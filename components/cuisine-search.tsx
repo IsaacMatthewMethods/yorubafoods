@@ -138,7 +138,7 @@ export default function CuisineSearch() {
   const parsedResult = parseResult()
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-4">
       <form onSubmit={handleSearch} className="space-y-4">
         <div className="relative">
           <Input

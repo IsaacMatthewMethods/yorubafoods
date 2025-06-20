@@ -196,7 +196,7 @@ const foodData = {
   // Add more food items as needed
 }
 
-export default function FoodDetailPage({ params }: { params: { slug: string } }) {
+export default function FoodDetailPage({ params }: { params: { id: string } }) {
   const [showVideo, setShowVideo] = useState(false)
   const [imageError, setImageError] = useState(false)
   const [food, setFood] = useState<any>(null)
@@ -205,7 +205,7 @@ export default function FoodDetailPage({ params }: { params: { slug: string } })
 
   useEffect(() => {
     try {
-      const foodItem = foodData[params.slug as keyof typeof foodData]
+      const foodItem = foodData[params.id as keyof typeof foodData]
       if (!foodItem) {
         notFound()
       }
@@ -216,7 +216,7 @@ export default function FoodDetailPage({ params }: { params: { slug: string } })
     } finally {
       setLoading(false)
     }
-  }, [params.slug])
+  }, [params.id])
 
   const handleImageError = () => {
     setImageError(true)
