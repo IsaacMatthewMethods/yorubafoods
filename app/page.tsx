@@ -57,7 +57,7 @@ export default function Home() {
       <div className="space-y-8">
         {/* Hero Section */}
         <div className="relative rounded-2xl overflow-hidden h-64 mb-8">
-          <Image src="/placeholder.svg?height=800&width=600" alt="Yoruba Food" fill className="object-cover" priority />
+          <Image src="https://i0.wp.com/outravelandtour.com/wp-content/uploads/2021/05/Yoruba-Cuisines.jpg?resize=768%2C510&ssl=1" alt="Yoruba Food" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent flex flex-col justify-end p-6">
             <h1 className="text-3xl font-bold text-white">Yoruba Food Helper</h1>
             <p className="text-white/90 mt-2">Discover the rich flavors of Yoruba cuisine</p>

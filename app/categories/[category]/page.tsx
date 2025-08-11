@@ -53,7 +53,7 @@ const categoryData = {
         id: "obe-ata",
         name: "Obe Ata",
         description: "Pepper soup with palm oil and assorted proteins",
-        image: "/placeholder.svg?height=800&width=600",
+        image: "https://www.seriouseats.com/thmb/XWe7TRn7TajCl8Q3t2ItYqfQPec=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2020__02__20200224-obe-ata-vicky-wasik-23-48ef3dfb1176452f99d4a0c6fbed3e16.jpg",
         videoId: "dQw4w9WgXcQ",
       },
     ],

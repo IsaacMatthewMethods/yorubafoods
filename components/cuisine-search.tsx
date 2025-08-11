@@ -22,7 +22,7 @@ const foodImages: Record<string, string> = {
   akara: "/placeholder.svg?height=800&width=600",
   ewedu: "/placeholder.svg?height=800&width=600",
   gbegiri: "/placeholder.svg?height=800&width=600",
-  default: "/placeholder.svg?height=800&width=600",
+  default: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*lbczThKSS60nkRRhmn9nxw.jpeg",
 }
 
 // Helper function to find the best matching image

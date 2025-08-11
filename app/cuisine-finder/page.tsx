@@ -12,7 +12,7 @@ export default function CuisineFinderPage() {
 
         <div className="relative rounded-lg overflow-hidden mb-6">
           <Image
-            src="/placeholder.svg?height=800&width=600"
+            src="https://static.thenounproject.com/png/3381255-200.png"
             alt="Cuisine Finder"
             width={600}
             height={300}
