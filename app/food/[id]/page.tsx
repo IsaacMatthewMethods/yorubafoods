@@ -354,7 +354,7 @@ const foodData = {
     culturalSignificance:
       "Amala is deeply rooted in Yoruba culture and is often associated with traditional values and heritage. It's a symbol of cultural identity and is frequently served at important ceremonies and gatherings. The preparation of amala is considered an art form, and the ability to make smooth, lump-free amala is highly valued. It's often the centerpiece of the traditional Yoruba meal called 'Abula' - a combination of amala, ewedu, gbegiri, and stew.",
     image: "/placeholder.svg?height=800&width=600&text=Amala+Yam+Flour",
-    videoId: "Yp8q7daGnQs", // Updated with proper Amala video
+    videoId: "u8KUUXKZ6Lo",
   },
   "jollof-rice": {
     name: "Jollof Rice",
@@ -410,7 +410,7 @@ const foodData = {
     culturalSignificance:
       "Jollof Rice is more than just food; it's a cultural icon that has sparked friendly rivalries between West African countries, particularly Nigeria and Ghana, over who makes the best version. It's an essential dish at Nigerian parties, weddings, and celebrations. The dish represents unity and celebration, bringing people together around shared meals. In Nigerian culture, the quality of one's jollof rice is often seen as a measure of cooking skill.",
     image: "/placeholder.svg?height=800&width=600&text=Jollof+Rice+Nigerian",
-    videoId: "13CQCgFyHkw", // Updated with proper Jollof Rice video
+    videoId: "TLjSBq-vt-I",
   },
   "amala-ewedu": {
     name: "Amala & Ewedu",
@@ -503,7 +503,7 @@ const foodData = {
     culturalSignificance:
       "Moin Moin holds special significance in Nigerian culture as a symbol of celebration and hospitality. It's a staple at parties, weddings, and religious gatherings. The dish represents resourcefulness and creativity in Nigerian cooking, transforming simple beans into an elegant, flavorful meal. In Yoruba culture, the ability to make smooth, well-seasoned Moin Moin is considered a mark of culinary skill.",
     image: "/placeholder.svg?height=800&width=600&text=Moin+Moin+Bean+Pudding",
-    videoId: "aM9pRHXMzpI", // Updated with proper Moin Moin video
+    videoId: "JMWHSmMPQTI",
   },
   eba: {
     name: "Eba",
@@ -538,7 +538,7 @@ const foodData = {
     culturalSignificance:
       "Eba represents resilience and adaptability in Nigerian culture. As an affordable, filling meal, it has sustained generations of Nigerians and is often called 'the food of the masses.' Despite its humble origins, Eba is enjoyed across all social classes and is a unifying food that brings people together. It's commonly served at both everyday meals and special gatherings, demonstrating its integral role in Nigerian food culture.",
     image: "/placeholder.svg?height=800&width=600&text=Eba+Garri+Swallow",
-    videoId: "K8yDP8am-5o", // Updated with proper Eba video
+    videoId: "H8cHJ_JK9FA",
   },
   iyan: {
     name: "Iyan (Pounded Yam)",
@@ -574,7 +574,7 @@ const foodData = {
     culturalSignificance:
       "Pounded Yam holds the highest status among Nigerian swallows and is often called the 'king of swallows.' It's traditionally served to honor important guests and at significant celebrations like weddings, festivals, and religious ceremonies. The communal aspect of pounding yam - often requiring multiple people - represents unity and cooperation in Nigerian culture. The skill required to make perfect pounded yam is highly respected, and it's considered a mark of culinary excellence.",
     image: "/placeholder.svg?height=800&width=600&text=Iyan+Pounded+Yam",
-    videoId: "bFksxx4YPko", // Updated with proper Pounded Yam video
+    videoId: "l35CqPxr9bA",
   },
   fufu: {
     name: "Fufu",
@@ -610,7 +610,7 @@ const foodData = {
     culturalSignificance:
       "Fufu represents the shared culinary heritage of West Africa and demonstrates the cultural connections between different African nations. In Nigerian culture, it's appreciated for its accessibility and ease of preparation, making it a common choice for everyday meals. The soft texture of Fufu makes it particularly suitable for children and elderly family members, representing the inclusive nature of Nigerian hospitality.",
     image: "/placeholder.svg?height=800&width=600&text=Fufu+Cassava+Flour",
-    videoId: "OjAXe4hKJbY", // Updated with proper Fufu video
+    videoId: "RSV698GrFHQ",
   },
   semo: {
     name: "Semo (Semolina)",
@@ -646,7 +646,7 @@ const foodData = {
     culturalSignificance:
       "Semo represents the evolution and modernization of Nigerian cuisine, showing how traditional food culture adapts to include new ingredients and methods. While not as traditional as yam or cassava-based swallows, Semo has earned its place in Nigerian households and is particularly popular in urban areas. It demonstrates the flexibility of Nigerian food culture in embracing new foods while maintaining traditional eating practices.",
     image: "/placeholder.svg?height=800&width=600&text=Semo+Semolina+Swallow",
-    videoId: "9Hs5HdJnpKs", // Updated with proper Semo video
+    videoId: "uuxGrvfLrzI",
   },
   lafun: {
     name: "Lafun",
@@ -686,7 +686,7 @@ const foodData = {
     culturalSignificance:
       "Lafun is deeply rooted in Yoruba tradition and represents the ingenuity of traditional food processing methods. The fermentation process used to make Lafun demonstrates the sophisticated understanding of food science that existed in traditional Yoruba culture. It's often associated with rural communities and traditional values, and is considered a connection to ancestral food ways. Lafun is particularly valued for its keeping qualities and nutritional benefits.",
     image: "/placeholder.svg?height=800&width=600&text=Lafun+Fermented+Cassava",
-    videoId: "rQGBjXkVD2c", // Updated with proper Lafun video
+    videoId: "0xgFYHAfl74",
   },
   "fried-rice": {
     name: "Nigerian Fried Rice",
@@ -741,7 +741,7 @@ const foodData = {
     culturalSignificance:
       "Nigerian Fried Rice represents celebration and abundance in Nigerian culture. Its colorful appearance symbolizes joy and festivity, making it an essential dish at parties, weddings, and holiday celebrations. The dish demonstrates the Nigerian approach to food presentation - that meals should be visually appealing as well as delicious. It's often prepared in large quantities for sharing, reflecting the communal nature of Nigerian celebrations.",
     image: "/placeholder.svg?height=800&width=600&text=Nigerian+Fried+Rice",
-    videoId: "FVeYScrDVw4", // Updated with proper Fried Rice video
+    videoId: "xGLN5zSJyw0",
   },
   "ofada-rice": {
     name: "Ofada Rice",
@@ -791,7 +791,7 @@ const foodData = {
     culturalSignificance:
       "Ofada Rice represents Nigerian agricultural heritage and the movement to support local food production. It's a symbol of cultural pride and economic independence, encouraging Nigerians to embrace indigenous foods over imported alternatives. The dish is often served at cultural festivals and events that celebrate Nigerian heritage, representing a connection to the land and traditional farming practices.",
     image: "/placeholder.svg?height=800&width=600&text=Ofada+Rice+Local+Nigerian",
-    videoId: "Qh4vp1pO6h0", // Updated with proper Ofada Rice video
+    videoId: "yRRxo-z4NWI",
   },
   "tuwo-shinkafa": {
     name: "Tuwo Shinkafa",
@@ -823,7 +823,7 @@ const foodData = {
     culturalSignificance:
       "Tuwo Shinkafa represents the diversity of Nigerian cuisine and the regional variations in swallow preparation. It's particularly significant in Northern Nigerian culture and demonstrates how different regions adapt basic cooking techniques to local ingredients and preferences.",
     image: "/placeholder.svg?height=800&width=600&text=Tuwo+Shinkafa+Rice+Pudding",
-    videoId: "8yQz6ZqVKpE", // Updated with proper Tuwo Shinkafa video
+    videoId: "BKUgOBK_ii8",
   },
   "coconut-rice": {
     name: "Coconut Rice",
@@ -870,7 +870,7 @@ const foodData = {
     culturalSignificance:
       "Coconut Rice represents the influence of coastal ingredients in Nigerian cuisine. It's often served at celebrations and demonstrates the creativity in Nigerian cooking, where local ingredients are combined with international influences to create unique dishes.",
     image: "/placeholder.svg?height=800&width=600&text=Coconut+Rice",
-    videoId: "mBcY3W5WgNU", // Updated with proper Coconut Rice video
+    videoId: "CHYTUzyhgbE",
   },
   "puff-puff": {
     name: "Puff Puff",
@@ -913,7 +913,7 @@ const foodData = {
     culturalSignificance:
       "Puff Puff is deeply embedded in Nigerian culture as a symbol of celebration and joy. It's one of the first snacks children learn to make and is associated with happy memories and gatherings. The snack transcends ethnic and religious boundaries, being enjoyed by all Nigerians regardless of background. It's often prepared in large quantities for sharing, reflecting the communal nature of Nigerian hospitality.",
     image: "/placeholder.svg?height=800&width=600&text=Puff+Puff+Nigerian+Snack",
-    videoId: "aM9pRHXMzpI", // Updated with proper Puff Puff video
+    videoId: "TEDlOe8Qob4",
   },
 
   akara: {
@@ -957,7 +957,7 @@ const foodData = {
     culturalSignificance:
       "Akara holds special significance in Nigerian culture as a traditional breakfast food that brings families together. It's often prepared by mothers and grandmothers as a way of showing care and love. The dish is also significant in Yoruba traditional religion and is sometimes used in ceremonial offerings. Akara represents the ingenuity of Nigerian cuisine in transforming simple ingredients into delicious, nutritious meals.",
     image: "/placeholder.svg?height=800&width=600&text=Akara+Bean+Cakes",
-    videoId: "K8yDP8am-5o", // Updated with proper Akara video
+    videoId: "A5bu-XE53es",
   },
 
   "chin-chin": {

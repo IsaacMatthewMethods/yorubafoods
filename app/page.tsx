@@ -41,14 +41,14 @@ export default function Home() {
       name: "Jollof Rice",
       description: "Spicy tomato rice dish popular throughout West Africa",
       image: "/placeholder.svg?height=800&width=600",
-      videoId: "13CQCgFyHkw", // Updated with proper video ID
+      videoId: "TLjSBq-vt-I", // Updated Jollof Rice video ID from user's provided link
     },
     {
       id: "moin-moin",
       name: "Moin Moin",
       description: "Steamed bean pudding with peppers, onions, and spices",
       image: "/placeholder.svg?height=800&width=600",
-      videoId: "aM9pRHXMzpI", // Updated with proper video ID
+      videoId: "JMWHSmMPQTI", // Updated Moin Moin video ID from user's provided link
     },
   ]
 
