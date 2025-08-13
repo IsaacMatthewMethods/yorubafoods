@@ -1,6 +1,6 @@
 import type React from "react"
 import "./globals.css"
-import type { Metadata, Viewport } from "next"
+import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import MobileNav from "@/components/mobile-nav"
@@ -11,7 +11,9 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Yoruba Food Helper",
   description: "Discover and learn about Yoruba cuisine",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
   manifest: "/manifest.json",
+  themeColor: "#d97706",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -32,14 +34,6 @@ export const metadata: Metadata = {
     description: "Discover and learn about Yoruba cuisine",
   },
     generator: 'v0.app'
-}
-
-export const viewport: Viewport = {
-  themeColor: "#d97706",
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
 }
 
 export default function RootLayout({

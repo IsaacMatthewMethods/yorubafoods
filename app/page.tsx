@@ -34,21 +34,21 @@ export default function Home() {
       name: "Amala & Ewedu",
       description: "A classic Yoruba combination of yam flour swallow with jute leaf soup",
       image: "/placeholder.svg?height=800&width=600",
-      videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
+      videoId: "ogB0JsUyVv8", // Updated with proper video ID
     },
     {
       id: "jollof-rice",
       name: "Jollof Rice",
       description: "Spicy tomato rice dish popular throughout West Africa",
       image: "/placeholder.svg?height=800&width=600",
-      videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
+      videoId: "13CQCgFyHkw", // Updated with proper video ID
     },
     {
       id: "moin-moin",
       name: "Moin Moin",
       description: "Steamed bean pudding with peppers, onions, and spices",
       image: "/placeholder.svg?height=800&width=600",
-      videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
+      videoId: "aM9pRHXMzpI", // Updated with proper video ID
     },
   ]
 
@@ -57,7 +57,13 @@ export default function Home() {
       <div className="space-y-8">
         {/* Hero Section */}
         <div className="relative rounded-2xl overflow-hidden h-64 mb-8">
-          <Image src="https://i0.wp.com/outravelandtour.com/wp-content/uploads/2021/05/Yoruba-Cuisines.jpg?resize=768%2C510&ssl=1" alt="Yoruba Food" fill className="object-cover" priority />
+          <Image
+            src="https://i0.wp.com/outravelandtour.com/wp-content/uploads/2021/05/Yoruba-Cuisines.jpg?resize=768%2C510&ssl=1"
+            alt="Yoruba Food"
+            fill
+            className="object-cover"
+            priority
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent flex flex-col justify-end p-6">
             <h1 className="text-3xl font-bold text-white">Yoruba Food Helper</h1>
             <p className="text-white/90 mt-2">Discover the rich flavors of Yoruba cuisine</p>
