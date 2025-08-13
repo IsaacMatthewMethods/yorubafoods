@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Yoruba Food Helper",
     description: "Discover and learn about Yoruba cuisine",
   },
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
