@@ -1,15 +1,5 @@
 const CACHE_NAME = "yoruba-food-helper-v1"
-const urlsToCache = [
-  "/",
-  "/categories",
-  "/cuisine-finder",
-  "/chat",
-  "/about",
-  "/offline",
-  "/manifest.json",
-  "/icon-192x192.png",
-  "/icon-512x512.png",
-]
+const urlsToCache = ["/", "/categories", "/cuisine-finder", "/chat", "/about", "/offline", "/manifest.json"]
 
 // Install event
 self.addEventListener("install", (event) => {
