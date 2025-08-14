@@ -12,7 +12,7 @@ export default function ChatPage() {
 
         <div className="relative rounded-lg overflow-hidden mb-6">
           <Image
-            src="/images/ai-chat-hero.jpg"
+            src="/placeholder.svg?height=800&width=600"
             alt="AI Chat"
             width={600}
             height={300}
