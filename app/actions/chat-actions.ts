@@ -2,27 +2,37 @@
 
 export async function chatWithAi(message: string): Promise<string> {
   try {
-    // Static response for now - AI functionality disabled
-    return `Thank you for your message: "${message}"
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: "gpt-3.5-turbo",
+        messages: [
+          {
+            role: "system",
+            content: `You are a knowledgeable Yoruba cuisine expert and cooking assistant. You help users learn about traditional Yoruba foods, cooking techniques, ingredients, and cultural significance. Provide helpful, accurate information about Yoruba cuisine in a friendly and engaging way. Keep responses concise but informative.`,
+          },
+          {
+            role: "user",
+            content: message,
+          },
+        ],
+        max_tokens: 500,
+        temperature: 0.7,
+      }),
+    })
 
-The AI chat functionality has been temporarily disabled. However, I can still help you explore Yoruba cuisine!
+    if (!response.ok) {
+      throw new Error(`OpenAI API error: ${response.status}`)
+    }
 
-Here are some ways to discover more about Yoruba foods:
-
-1. Browse our Categories section to explore different types of dishes
-2. Use the Cuisine Finder to search for specific foods
-3. Check out our Featured Foods on the homepage
-4. Watch cooking videos for step-by-step preparation guides
-
-Popular topics you might be interested in:
-- Traditional soups like Ewedu, Gbegiri, and Ogbono
-- Swallow foods like Amala, Eba, and Pounded Yam
-- Delicious snacks like Puff Puff, Akara, and Chin Chin
-- Rice dishes and refreshing drinks
-
-Feel free to explore the app to learn more about these amazing traditional foods!`
+    const data = await response.json()
+    return data.choices[0]?.message?.content || "I apologize, but I couldn't generate a response. Please try again."
   } catch (error) {
     console.error("Error in chat:", error)
-    return "Sorry, I could not process your request at the moment. Please try again later."
+    return "I'm having trouble connecting to my knowledge base right now. Please try again in a moment, or feel free to explore our food categories and detailed recipes!"
   }
 }
