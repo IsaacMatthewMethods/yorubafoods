@@ -1,40 +1,28 @@
 "use server"
 
-import { generateText } from "ai"
-import { openai } from "@ai-sdk/openai"
-
 export async function chatWithAi(message: string): Promise<string> {
   try {
-    const { text } = await generateText({
-      model: openai("gpt-4o"),
-      prompt: message,
-      system: `You are a knowledgeable assistant specializing in Yoruba cuisine and culture.
-      
-      Your expertise includes:
-      - Traditional Yoruba foods and their preparation
-      - Ingredients commonly used in Yoruba cooking
-      - Cultural significance of different dishes
-      - Cooking techniques and tips
-      - Nutritional information about Yoruba foods
-      - History of Yoruba cuisine
-      
-      Important formatting rules:
-      - DO NOT use markdown headers (# or ##) in your responses
-      - Present information in clear, organized sections with plain text labels
-      - When listing ingredients, use proper bullet points with the format:
-        - First ingredient
-        - Second ingredient
-      - When describing recipes, number the preparation steps with the format:
-        1. First step
-        2. Second step
-      - Keep your responses conversational and engaging
-      
-      If you're unsure about something, acknowledge it rather than making up information.`,
-    })
+    // Static response for now - AI functionality disabled
+    return `Thank you for your message: "${message}"
 
-    return text
+The AI chat functionality has been temporarily disabled. However, I can still help you explore Yoruba cuisine!
+
+Here are some ways to discover more about Yoruba foods:
+
+1. Browse our Categories section to explore different types of dishes
+2. Use the Cuisine Finder to search for specific foods
+3. Check out our Featured Foods on the homepage
+4. Watch cooking videos for step-by-step preparation guides
+
+Popular topics you might be interested in:
+- Traditional soups like Ewedu, Gbegiri, and Ogbono
+- Swallow foods like Amala, Eba, and Pounded Yam
+- Delicious snacks like Puff Puff, Akara, and Chin Chin
+- Rice dishes and refreshing drinks
+
+Feel free to explore the app to learn more about these amazing traditional foods!`
   } catch (error) {
-    console.error("Error generating AI response:", error)
+    console.error("Error in chat:", error)
     return "Sorry, I could not process your request at the moment. Please try again later."
   }
 }
