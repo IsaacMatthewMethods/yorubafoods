@@ -12,14 +12,14 @@ const categoryData = {
         name: "Efo Riro",
         description: "A rich vegetable soup made with spinach, assorted meats, and palm oil",
         image: "https://allnigerianfoods.com/wp-content/uploads/making-efo-riro.jpg",
-        videoId: "8yQz6ZqVKpE",
+        videoId: "lxCY5fObe30",
       },
       {
         id: "egusi",
         name: "Egusi",
         description: "Melon seed soup with vegetables, meat, and fish",
         image: "https://i.ibb.co/20MhNr6M/egusi-soup-1-500x500.webp?height=800&width=600",
-        videoId: "YQq4ido7lQs",
+        videoId: "XeZJlxAsP18&t",
       },
       {
         id: "ewedu",
