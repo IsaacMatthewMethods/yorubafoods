@@ -232,14 +232,14 @@ const categoryData = {
         id: "fura-da-nono",
         name: "Fura da Nono",
         description: "Millet balls with yogurt and spices",
-        image: "/placeholder.svg?height=800&width=600",
+        image: "https://www.nigeriantravelsmagazine.com/wp-content/uploads/2024/10/Picture4.png", // Image updated
         videoId: "0_kWAVqGkF0",
       },
       {
         id: "palm-wine",
         name: "Palm Wine",
         description: "Traditional fermented palm sap with a sweet taste",
-        image: "/placeholder.svg?height=800&width=600",
+        image: "https://www.emaketa.com/wp-content/uploads/2025/05/palm-wine.jpg", // Image updated
         videoId: "gFNDtYZnl74",
       },
       {
@@ -259,35 +259,35 @@ const categoryData = {
         id: "asun",
         name: "Asun",
         description: "Spicy grilled goat meat with peppers and onions",
-        image: "/placeholder.svg?height=800&width=600",
+        image: "https://lowcarbafrica.com/wp-content/uploads/2019/09/Asun-recipe-IG-1.jpg", // Image updated
         videoId: "iM6rU990DFA",
       },
       {
         id: "ipekere",
         name: "Ipekere",
         description: "Plantain chips with a crispy texture",
-        image: "/placeholder.svg?height=800&width=600",
+        image: "https://pan-african.net/wp-content/uploads/2021/04/Plantain-chips-768x512.jpg", // Image updated
         videoId: "9AxWnAQiK4A",
       },
       {
         id: "adun",
         name: "Adun",
         description: "Coconut candy with a sweet, tropical flavor",
-        image: "/placeholder.svg?height=800&width=600",
+        image: "https://9jafoodie.com/wp-content/uploads/2013/01/Aadun-600x398.jpg", // Image updated
         videoId: "-Xr_I8-2jyY",
       },
       {
         id: "kilishi",
         name: "Kilishi",
         description: "Spiced dried meat with a chewy texture",
-        image: "/placeholder.svg?height=800&width=600",
+        image: "https://www.allnigerianrecipes.com/wp-content/uploads/2019/04/kilishi.jpg", // Image updated
         videoId: "_uluACxidDk",
       },
       {
         id: "isu-sisun",
         name: "Isu Sisun",
         description: "Roasted yam often served with pepper sauce",
-        image: "/placeholder.svg?height=800&width=600",
+        image: "https://www.nigeriagalleria.com/Health_Lifestyle/Recipe/Yam/Images/ng-roastedyam.jpg", // Image updated
         videoId: "MvyyqiRQrjg",
       },
     ],

@@ -9,7 +9,7 @@ import { notFound } from "next/navigation"
 import { useEffect } from "react"
 
 // This would typically come from a database
-const foodData = {
+const foodData: FoodData = {
   "efo-riro": {
     name: "Efo Riro",
     description: "A rich vegetable soup made with spinach, assorted meats, and palm oil",
@@ -55,8 +55,8 @@ const foodData = {
     },
     culturalSignificance:
       "Efo Riro is more than just a dish in Yoruba culture; it represents hospitality and community. It's often prepared for family gatherings and celebrations, symbolizing abundance and prosperity. The soup is considered a complete meal and is frequently served to guests as a sign of respect and care. In Yoruba tradition, the ability to prepare a good Efo Riro is seen as a mark of culinary skill.",
-    image: "/placeholder.svg?height=800&width=600&text=Efo+Riro+Spinach+Soup",
-    videoId: "8yQz6ZqVKpE", // Updated with proper Efo Riro video
+    image: "https://allnigerianfoods.com/wp-content/uploads/making-efo-riro.jpg",
+    videoId: "lxCY5fObe30", // Updated to match your last provided list
   },
   egusi: {
     name: "Egusi Soup",
@@ -106,11 +106,11 @@ const foodData = {
     },
     culturalSignificance:
       "Egusi Soup is a symbol of abundance and prosperity in Nigerian culture. It's often served at important celebrations and gatherings, and is considered a dish of honor for special guests. The soup represents the diversity of Nigerian cuisine, as different regions have their own variations and preparation methods. In many Nigerian households, egusi soup is prepared for Sunday meals and special occasions.",
-    image: "/placeholder.svg?height=800&width=600&text=Egusi+Soup+Melon+Seeds",
-    videoId: "YQq4ido7lQs", // Updated with proper Egusi video
+    image: "https://allnigerianfoods.com/wp-content/uploads/egusi_soup_pot-768x512.jpg", // Updated with provided link
+    videoId: "YQq4ido7lQs",
   },
   ewedu: {
-    name: "Ewedu Soup",
+    name: "Ewedu",
     description: "A popular and healthy Yoruba soup made from jute leaves",
     longDescription: `
       Ewedu Soup is one of the most iconic soups in Yoruba cuisine, made from jute leaves (Corchorus olitorius). This light, nutritious soup is beloved for its unique texture and health benefits. The name "Ewedu" comes from the Yoruba word for jute leaves, which are the primary ingredient in this traditional soup.
@@ -146,8 +146,8 @@ const foodData = {
     },
     culturalSignificance:
       "Ewedu soup is deeply embedded in Yoruba culture and is considered a symbol of tradition and heritage. It's an essential component of the Abula meal, which is served at weddings, naming ceremonies, and other important celebrations. The preparation method, especially the traditional beating with ijabe, is passed down through generations and represents the preservation of cultural practices.",
-    image: "/placeholder.svg?height=800&width=600&text=Ewedu+Soup+Jute+Leaves",
-    videoId: "ogB0JsUyVv8", // Already correct
+    image: "https://allnigerianfoods.com/wp-content/uploads/2015/04/ewedu-soup.jpg",
+    videoId: "ogB0JsUyVv8",
   },
   gbegiri: {
     name: "Gbegiri Soup",
@@ -187,8 +187,8 @@ const foodData = {
     },
     culturalSignificance:
       "Gbegiri soup is a cornerstone of Yoruba culinary tradition and represents the sophisticated nature of Yoruba cuisine. As part of the Abula combination, it's served at the most important celebrations including weddings, festivals, and religious ceremonies. The soup symbolizes abundance and prosperity, and its preparation is considered an art form that showcases the cook's skill and cultural knowledge.",
-    image: "/placeholder.svg?height=800&width=600&text=Gbegiri+Bean+Soup",
-    videoId: "4EgTUHViaRU", // Already correct
+    image: "https://www.allnigerianrecipes.com/wp-content/uploads/2019/03/gbegiri-soup.jpg",
+    videoId: "4EgTUHViaRU",
   },
   "ila-asepo": {
     name: "Ila Asepo",
@@ -231,8 +231,8 @@ const foodData = {
     },
     culturalSignificance:
       "Ila Asepo represents the ingenuity of Yoruba cooking, where simple ingredients are transformed into flavorful, nutritious meals. It's often prepared by mothers as a quick, healthy meal for the family and is associated with home cooking and maternal care. The soup is also significant in traditional medicine, as okra is believed to have various health benefits.",
-    image: "/placeholder.svg?height=800&width=600&text=Ila+Asepo+Okra+Soup",
-    videoId: "xvFZjo5PgG0", // Updated with proper Ila Asepo video
+    image: "https://www.myactivekitchen.com/wp-content/uploads/2017/04/stewed-okra-5.jpg",
+    videoId: "ZHBaPcJ_C44", // Updated to match your last provided list
   },
   ogbono: {
     name: "Ogbono Soup",
@@ -274,8 +274,8 @@ const foodData = {
     },
     culturalSignificance:
       "Ogbono soup holds special significance in Nigerian culture as a symbol of unity and sharing. The communal nature of eating from a shared pot of ogbono with swallow represents togetherness and family bonds. It's often prepared for special occasions and is considered a dish that brings people together.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bzbdMZPLc9QP4TvnPz33m2LX7fGluc.png",
-    videoId: "PH-G3ukBbAc", // Already correct
+    image: "https://allnigerianfoods.com/wp-content/uploads/pot-of-ogbono-soup.jpg", // Updated to match your categoryData
+    videoId: "PH-G3ukBbAc",
   },
   "obe-ata": {
     name: "Obe Ata",
@@ -320,7 +320,7 @@ const foodData = {
       "Obe Ata is the foundation of Yoruba cuisine and represents the mastery of pepper stew preparation. It's often the first stew young Yoruba women learn to make, and its quality is considered a measure of cooking skill. The stew is essential for many traditional ceremonies and family gatherings.",
     image:
       "https://www.seriouseats.com/thmb/XWe7TRn7TajCl8Q3t2ItYqfQPec=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2020__02__20200224-obe-ata-vicky-wasik-23-48ef3dfb1176452f99d4a0c6fbed3e16.jpg",
-    videoId: "z6aIG2NL-9Y", // Already correct
+    videoId: "z6aIG2NL-9Y",
   },
   amala: {
     name: "Amala",
@@ -353,7 +353,7 @@ const foodData = {
     },
     culturalSignificance:
       "Amala is deeply rooted in Yoruba culture and is often associated with traditional values and heritage. It's a symbol of cultural identity and is frequently served at important ceremonies and gatherings. The preparation of amala is considered an art form, and the ability to make smooth, lump-free amala is highly valued. It's often the centerpiece of the traditional Yoruba meal called 'Abula' - a combination of amala, ewedu, gbegiri, and stew.",
-    image: "/placeholder.svg?height=800&width=600&text=Amala+Yam+Flour",
+    image: "https://yummieliciouz.com/wp-content/uploads/2023/04/how-to-make-amala-768x512.jpg",
     videoId: "u8KUUXKZ6Lo",
   },
   "jollof-rice": {
@@ -409,7 +409,7 @@ const foodData = {
     },
     culturalSignificance:
       "Jollof Rice is more than just food; it's a cultural icon that has sparked friendly rivalries between West African countries, particularly Nigeria and Ghana, over who makes the best version. It's an essential dish at Nigerian parties, weddings, and celebrations. The dish represents unity and celebration, bringing people together around shared meals. In Nigerian culture, the quality of one's jollof rice is often seen as a measure of cooking skill.",
-    image: "/placeholder.svg?height=800&width=600&text=Jollof+Rice+Nigerian",
+    image: "https://i.pinimg.com/736x/a7/d4/92/a7d492607aab27346744244d02da29b6.jpg",
     videoId: "TLjSBq-vt-I",
   },
   "amala-ewedu": {
@@ -460,734 +460,1106 @@ const foodData = {
   },
   "moin-moin": {
     name: "Moin Moin",
-    description: "Steamed bean pudding with peppers, onions, and spices",
+    description: "Steamed bean pudding with peppers, onions, and various additions",
     longDescription: `
-    Moin Moin is a traditional Nigerian steamed bean pudding that's beloved across the country, particularly among the Yoruba people. Made from peeled black-eyed peas (beans), this protein-rich dish is steamed to perfection, creating a smooth, cake-like texture that's both nutritious and delicious.
+      Moin Moin is a savory steamed bean pudding made from a mixture of peeled beans, bell peppers, onions, and often includes fish, eggs, or corned beef. It's a popular staple in Nigerian cuisine, known for its smooth texture and rich, spicy flavor.
 
-    The beauty of Moin Moin lies in its versatility - it can be prepared as a simple, everyday meal or dressed up with various proteins like fish, eggs, or meat for special occasions. The dish is naturally gluten-free and packed with plant-based protein, making it a healthy choice for people of all ages.
+      The preparation involves soaking and peeling beans, then blending them with fresh peppers, onions, and other desired ingredients to form a smooth batter. This batter is then poured into leaves (like uma leaves), ramekins, or foil containers and steamed until firm.
 
-    Traditionally, Moin Moin was steamed in banana leaves or uma leaves, which imparted a subtle, earthy flavor to the dish. Today, it's commonly prepared in aluminum foil, plastic containers, or special Moin Moin cups, but the traditional leaf-wrapping method is still preferred for its authentic taste and cultural significance.
-  `,
+      Moin Moin is incredibly versatile and can be eaten alone, as a side dish, or paired with other Nigerian staples like Jollof Rice, garri, or bread. It's a common feature at Nigerian parties and gatherings, valued for its nutritious content and satisfying taste.
+    `,
     ingredients: [
-      "2 cups black-eyed peas (beans), soaked and peeled",
-      "1 large onion",
-      "3-4 red bell peppers (tatashe)",
-      "2-3 scotch bonnet peppers (ata rodo) - adjust to taste",
-      "1/4 cup palm oil or vegetable oil",
-      "2 tablespoons ground crayfish",
-      "2 seasoning cubes",
+      "2 cups peeled beans (black-eyed peas or honey beans)",
+      "1 large onion, roughly chopped",
+      "2-3 red bell peppers (tatashe), roughly chopped",
+      "1-2 scotch bonnet peppers (ata rodo) - adjust to taste",
+      "1/4 cup vegetable oil or palm oil (optional, for richer flavor)",
+      "1/2 cup fish stock or water",
+      "1-2 hard-boiled eggs, sliced (optional)",
+      "Cooked fish (mackerel, salmon) or corned beef, flaked (optional)",
+      "2 seasoning cubes (Maggi or Knorr)",
       "Salt to taste",
-      "1 cup warm water or stock",
-      "Hard-boiled eggs (optional)",
-      "Smoked fish or meat (optional)",
-      "Banana leaves or aluminum foil for wrapping",
+      "Aluminum foil or leaves (uma leaves) for steaming",
     ],
     instructions: [
-      "Soak the black-eyed peas in water for 30 minutes, then rub to remove the skins. Rinse until clean.",
-      "Blend the peeled beans with onions, peppers, and a little water until smooth. The consistency should be like thick pancake batter.",
-      "Pour the blended mixture into a bowl. Add palm oil, ground crayfish, seasoning cubes, and salt. Mix well.",
-      "Gradually add warm water or stock to achieve a pourable consistency. The mixture should not be too thick or too thin.",
-      "Taste and adjust seasoning as needed.",
-      "If using banana leaves, blanch them in hot water to soften. Cut into squares for wrapping.",
-      "Pour the mixture into prepared containers, banana leaf parcels, or aluminum foil. Add boiled eggs or fish if desired.",
-      "Steam for 45 minutes to 1 hour until firm and cooked through. Test with a toothpick - it should come out clean.",
-      "Allow to cool slightly before unwrapping. Serve warm as a main dish or side.",
-    ],
-    nutritionalInfo: {
-      calories: "180 per serving",
-      protein: "12g",
-      carbs: "20g",
-      fat: "6g",
-      fiber: "5g",
-    },
-    culturalSignificance:
-      "Moin Moin holds special significance in Nigerian culture as a symbol of celebration and hospitality. It's a staple at parties, weddings, and religious gatherings. The dish represents resourcefulness and creativity in Nigerian cooking, transforming simple beans into an elegant, flavorful meal. In Yoruba culture, the ability to make smooth, well-seasoned Moin Moin is considered a mark of culinary skill.",
-    image: "/placeholder.svg?height=800&width=600&text=Moin+Moin+Bean+Pudding",
-    videoId: "JMWHSmMPQTI",
-  },
-  eba: {
-    name: "Eba",
-    description: "Garri (cassava) swallow with a slightly sour taste",
-    longDescription: `
-    Eba is one of Nigeria's most popular swallows, made from garri (processed cassava flakes). This staple food is beloved for its simplicity, affordability, and versatility. Eba has a distinctive slightly sour taste that comes from the fermentation process used in making garri, and it pairs wonderfully with a variety of Nigerian soups.
-
-    The preparation of Eba is straightforward but requires skill to achieve the perfect consistency - it should be smooth, stretchy, and free of lumps. The texture should be firm enough to hold its shape when molded but soft enough to swallow easily. Different regions in Nigeria have their preferred consistency, with some preferring it firmer and others softer.
-
-    Eba is particularly popular because garri has a long shelf life and is readily available throughout Nigeria. It's a filling, energy-rich food that provides sustenance for millions of Nigerians daily. The dish is naturally gluten-free and can be prepared quickly, making it a convenient choice for busy households.
-  `,
-    ingredients: ["1½ cups garri (cassava flakes)", "2-3 cups hot water", "Additional hot water as needed"],
-    instructions: [
-      "Boil water in a pot. You'll need enough hot water to achieve the right consistency.",
-      "Pour the garri into a bowl and check for any impurities or stones. Remove if found.",
-      "Gradually add hot water to the garri, starting with about 1 cup. The water should be very hot but not necessarily boiling.",
-      "Using a wooden spoon or turning stick, mix the garri and water quickly and vigorously to prevent lumps from forming.",
-      "Continue adding hot water gradually while mixing until you achieve a smooth, stretchy consistency.",
-      "The Eba should be firm enough to mold with your hands but soft enough to swallow easily.",
-      "Knead the mixture with the wooden spoon until it becomes smooth and elastic.",
-      "If it's too thick, add more hot water gradually. If too soft, add a little more garri.",
-      "Once the desired consistency is achieved, cover and let it rest for 2-3 minutes.",
-      "Serve immediately while warm with your choice of soup.",
-    ],
-    nutritionalInfo: {
-      calories: "360 per serving",
-      protein: "1g",
-      carbs: "88g",
-      fat: "0.5g",
-      fiber: "2g",
-    },
-    culturalSignificance:
-      "Eba represents resilience and adaptability in Nigerian culture. As an affordable, filling meal, it has sustained generations of Nigerians and is often called 'the food of the masses.' Despite its humble origins, Eba is enjoyed across all social classes and is a unifying food that brings people together. It's commonly served at both everyday meals and special gatherings, demonstrating its integral role in Nigerian food culture.",
-    image: "/placeholder.svg?height=800&width=600&text=Eba+Garri+Swallow",
-    videoId: "H8cHJ_JK9FA",
-  },
-  iyan: {
-    name: "Iyan (Pounded Yam)",
-    description: "Pounded yam with a smooth, stretchy texture",
-    longDescription: `
-    Iyan, commonly known as Pounded Yam, is considered the king of Nigerian swallows. This prestigious dish is made from boiled yam that's pounded until it achieves a smooth, stretchy, and elastic consistency. Pounded yam is highly regarded in Nigerian cuisine and is often reserved for special occasions and honored guests.
-
-    The traditional preparation of Iyan involves using a large wooden mortar (odo) and pestle (omo odo) to pound boiled yam. This process requires skill, strength, and rhythm, often involving two people - one to pound and another to turn the yam. The rhythmic pounding creates a unique texture that cannot be replicated by modern machines.
-
-    Iyan is prized for its superior texture and taste compared to other swallows. It has a neutral flavor that perfectly complements rich, flavorful soups. The smooth, stretchy consistency makes it easy to mold and swallow, while its substantial nature makes it very filling and satisfying.
-  `,
-    ingredients: ["2-3 medium-sized yams, peeled and cut into chunks", "Water for boiling", "Salt (optional)"],
-    instructions: [
-      "Peel the yams and cut into medium-sized chunks. Remove any bad spots or eyes.",
-      "Rinse the yam pieces in clean water to remove any dirt or starch.",
-      "Place the yam pieces in a pot and add enough water to cover them. Add a pinch of salt if desired.",
-      "Bring to a boil and cook for 15-20 minutes until the yam is very soft and easily pierced with a fork.",
-      "Drain the water completely and let the yam cool slightly to handle safely.",
-      "Transfer the cooked yam to a large mortar (odo). If you don't have a mortar, you can use a large bowl and potato masher.",
-      "Begin pounding the yam with the pestle, starting gently and increasing intensity as the yam breaks down.",
-      "Continue pounding while occasionally turning the yam to ensure even consistency.",
-      "Pound until the yam becomes completely smooth, stretchy, and elastic. This usually takes 10-15 minutes of continuous pounding.",
-      "The finished Iyan should be smooth, stretchy, and free of lumps.",
-      "Serve immediately while warm with your favorite soup.",
+      "Soak and peel the beans. This is crucial for a smooth texture.",
+      "Combine the peeled beans, roughly chopped onion, and scotch bonnet peppers in a blender. Add a few tablespoons of water if necessary to help blend, but keep the mixture as thick as possible.",
+      "Blend until very smooth and creamy. The smoother the batter, the lighter the Akara.",
+      "Pour the batter into a large bowl. Using a stand mixer, hand mixer, or by hand with a whisk, beat the batter vigorously for 10-15 minutes until it is light, fluffy, and has significantly increased in volume. This step is essential for airy Akara.",
+      "Stir in salt to taste. Do not overmix after adding salt.",
+      "Prepare your steaming containers (foil cups, ramekins, or wrapped leaves). Lightly grease them if not using leaves.",
+      "Pour the moin moin batter into the prepared containers, filling them about two-thirds full.",
+      "Arrange the containers in a steamer basket or a pot with a little water at the bottom (ensure water doesn't touch the containers).",
+      "Steam on medium-high heat for 45-60 minutes, or until firm to touch and a toothpick inserted comes out clean.",
+      "Serve hot.",
     ],
     nutritionalInfo: {
       calories: "280 per serving",
-      protein: "3g",
-      carbs: "68g",
-      fat: "0.3g",
-      fiber: "4g",
-    },
-    culturalSignificance:
-      "Pounded Yam holds the highest status among Nigerian swallows and is often called the 'king of swallows.' It's traditionally served to honor important guests and at significant celebrations like weddings, festivals, and religious ceremonies. The communal aspect of pounding yam - often requiring multiple people - represents unity and cooperation in Nigerian culture. The skill required to make perfect pounded yam is highly respected, and it's considered a mark of culinary excellence.",
-    image: "/placeholder.svg?height=800&width=600&text=Iyan+Pounded+Yam",
-    videoId: "l35CqPxr9bA",
-  },
-  fufu: {
-    name: "Fufu",
-    description: "Cassava flour swallow with a soft, doughy consistency",
-    longDescription: `
-    Fufu is a popular West African swallow made from cassava flour, known for its soft, doughy consistency and neutral taste. This versatile staple food is enjoyed across many West African countries, with each region having its own variation and preparation method.
-
-    Nigerian Fufu is typically made from processed cassava flour that's mixed with hot water to create a smooth, moldable consistency. Unlike some other swallows, Fufu has a softer texture that's easy to swallow and digest, making it popular among people of all ages, including children and elderly individuals.
-
-    The neutral flavor of Fufu makes it an excellent companion to richly flavored Nigerian soups. It absorbs the flavors of the soup it's eaten with, creating a harmonious blend of tastes and textures. Fufu is also naturally gluten-free and provides a good source of carbohydrates for energy.
-  `,
-    ingredients: ["2 cups cassava flour (fufu flour)", "3-4 cups hot water", "Additional hot water as needed"],
-    instructions: [
-      "Boil water in a pot. You'll need enough hot water to achieve the right consistency.",
-      "Pour the cassava flour into a large bowl and check for any lumps or impurities.",
-      "Gradually add hot water to the flour, starting with about 1½ cups.",
-      "Using a wooden spoon, mix the flour and water quickly to prevent lumps from forming.",
-      "Continue adding hot water gradually while mixing until you achieve a soft, doughy consistency.",
-      "The Fufu should be softer than other swallows but still moldable with your hands.",
-      "Knead the mixture thoroughly until it becomes smooth and uniform in texture.",
-      "If the mixture is too thick, add more hot water gradually. If too soft, add a little more flour.",
-      "Continue mixing until the Fufu is smooth, soft, and free of lumps.",
-      "Cover and let it rest for 2-3 minutes to allow the flour to fully hydrate.",
-      "Serve immediately while warm with your choice of soup.",
-    ],
-    nutritionalInfo: {
-      calories: "340 per serving",
-      protein: "1g",
-      carbs: "84g",
-      fat: "0.2g",
-      fiber: "2g",
-    },
-    culturalSignificance:
-      "Fufu represents the shared culinary heritage of West Africa and demonstrates the cultural connections between different African nations. In Nigerian culture, it's appreciated for its accessibility and ease of preparation, making it a common choice for everyday meals. The soft texture of Fufu makes it particularly suitable for children and elderly family members, representing the inclusive nature of Nigerian hospitality.",
-    image: "/placeholder.svg?height=800&width=600&text=Fufu+Cassava+Flour",
-    videoId: "RSV698GrFHQ",
-  },
-  semo: {
-    name: "Semo (Semolina)",
-    description: "Semolina swallow with a light color and smooth texture",
-    longDescription: `
-    Semo, short for Semolina, is a popular Nigerian swallow made from semolina flour (processed wheat). Known for its light cream color and smooth texture, Semo has become increasingly popular in Nigerian households due to its ease of preparation and pleasant taste.
-
-    Unlike traditional swallows made from tubers, Semo is made from wheat, giving it a slightly different nutritional profile and texture. It's smoother and often easier to prepare than some other swallows, making it a favorite among busy households and those new to preparing Nigerian swallows.
-
-    Semo has a mild, slightly sweet taste that pairs well with a variety of Nigerian soups. Its smooth texture and neutral flavor make it an excellent choice for those who prefer a less dense swallow. The light color of Semo also makes it visually appealing when served alongside colorful Nigerian soups.
-  `,
-    ingredients: ["1½ cups semolina flour", "2-3 cups hot water", "Additional hot water as needed"],
-    instructions: [
-      "Boil water in a pot. Ensure you have enough hot water for the right consistency.",
-      "Pour the semolina flour into a bowl and check for any lumps.",
-      "Gradually add hot water to the semolina, starting with about 1 cup.",
-      "Using a wooden spoon, mix quickly and vigorously to prevent lumps from forming.",
-      "Continue adding hot water gradually while stirring until you achieve a smooth consistency.",
-      "The Semo should be smooth and moldable but not too soft or too firm.",
-      "Stir continuously until the mixture becomes uniform and stretchy.",
-      "If too thick, add more hot water gradually. If too thin, add a little more semolina flour.",
-      "Continue mixing until the Semo is completely smooth and free of lumps.",
-      "The finished product should have a light cream color and smooth texture.",
-      "Serve immediately while warm with your preferred soup.",
-    ],
-    nutritionalInfo: {
-      calories: "320 per serving",
-      protein: "4g",
-      carbs: "70g",
-      fat: "1g",
-      fiber: "2g",
-    },
-    culturalSignificance:
-      "Semo represents the evolution and modernization of Nigerian cuisine, showing how traditional food culture adapts to include new ingredients and methods. While not as traditional as yam or cassava-based swallows, Semo has earned its place in Nigerian households and is particularly popular in urban areas. It demonstrates the flexibility of Nigerian food culture in embracing new foods while maintaining traditional eating practices.",
-    image: "/placeholder.svg?height=800&width=600&text=Semo+Semolina+Swallow",
-    videoId: "uuxGrvfLrzI",
-  },
-  lafun: {
-    name: "Lafun",
-    description: "Cassava flour swallow with a firm texture",
-    longDescription: `
-    Lafun is a traditional Yoruba swallow made from fermented cassava flour. This indigenous food has been a staple in Yoruba cuisine for generations and is particularly popular in southwestern Nigeria. Lafun is known for its distinctive firm texture and slightly tangy flavor that comes from the fermentation process.
-
-    The preparation of Lafun involves fermenting cassava tubers, drying them, and then grinding them into flour. This traditional process gives Lafun its characteristic taste and nutritional benefits. The fermentation process also makes it easier to digest and adds beneficial probiotics to the food.
-
-    Lafun has a firmer texture compared to other cassava-based swallows like Fufu, making it particularly satisfying and filling. It's often preferred by those who like their swallows with more substance and bite. The slightly sour taste of Lafun complements rich, spicy soups particularly well.
-  `,
-    ingredients: [
-      "2 cups Lafun flour (fermented cassava flour)",
-      "3-4 cups hot water",
-      "Additional hot water as needed",
-    ],
-    instructions: [
-      "Boil water in a pot, ensuring you have enough for the desired consistency.",
-      "Pour the Lafun flour into a bowl and check for any stones or impurities.",
-      "Gradually add hot water to the flour, starting with about 1½ cups.",
-      "Using a wooden spoon, mix quickly and thoroughly to prevent lumps.",
-      "Continue adding hot water while stirring until you achieve a firm, moldable consistency.",
-      "Lafun should be firmer than regular Fufu but still smooth and workable.",
-      "Stir vigorously until the mixture becomes uniform and slightly elastic.",
-      "If too thick, add more hot water gradually. If too soft, add more Lafun flour.",
-      "Continue mixing until completely smooth and free of lumps.",
-      "The finished Lafun should have a firm texture and slightly off-white color.",
-      "Let it rest for 2-3 minutes, then serve warm with soup.",
-    ],
-    nutritionalInfo: {
-      calories: "330 per serving",
-      protein: "2g",
-      carbs: "80g",
-      fat: "0.5g",
-      fiber: "3g",
-    },
-    culturalSignificance:
-      "Lafun is deeply rooted in Yoruba tradition and represents the ingenuity of traditional food processing methods. The fermentation process used to make Lafun demonstrates the sophisticated understanding of food science that existed in traditional Yoruba culture. It's often associated with rural communities and traditional values, and is considered a connection to ancestral food ways. Lafun is particularly valued for its keeping qualities and nutritional benefits.",
-    image: "/placeholder.svg?height=800&width=600&text=Lafun+Fermented+Cassava",
-    videoId: "0xgFYHAfl74",
-  },
-  "fried-rice": {
-    name: "Nigerian Fried Rice",
-    description: "Colorful vegetable rice dish with a festive appearance",
-    longDescription: `
-    Nigerian Fried Rice is a vibrant, colorful rice dish that's become a staple at Nigerian celebrations and special occasions. Unlike Asian fried rice, Nigerian fried rice is characterized by its generous use of vegetables, creating a colorful and nutritious meal that's as pleasing to the eye as it is to the palate.
-
-    This festive dish typically includes a variety of vegetables such as carrots, green beans, sweet corn, green peas, and bell peppers, all stir-fried with seasoned rice. The combination of colors - orange carrots, green vegetables, yellow corn, and red peppers - creates a beautiful rainbow effect that makes it perfect for parties and celebrations.
-
-    Nigerian Fried Rice is often prepared for Christmas, New Year, weddings, and other special occasions. It's usually served alongside other party foods like jollof rice, grilled chicken, and moin moin, creating a feast that represents abundance and celebration in Nigerian culture.
-  `,
-    ingredients: [
-      "3 cups long-grain parboiled rice",
-      "2 large carrots, diced",
-      "1 cup green beans, chopped",
-      "1 cup sweet corn kernels",
-      "1 cup green peas",
-      "1 red bell pepper, diced",
-      "1 green bell pepper, diced",
-      "1 large onion, diced",
-      "3 cloves garlic, minced",
-      "1/4 cup vegetable oil",
-      "2 cups chicken or vegetable stock",
-      "2 seasoning cubes",
-      "1 teaspoon curry powder",
-      "1 teaspoon thyme",
-      "Salt to taste",
-      "2 bay leaves",
-      "Cooked shrimp or chicken (optional)",
-    ],
-    instructions: [
-      "Wash and parboil the rice until it's about 70% cooked. Drain and set aside.",
-      "Heat oil in a large pan or wok over medium-high heat.",
-      "Add diced onions and minced garlic. Sauté until fragrant and translucent.",
-      "Add the harder vegetables first (carrots and green beans). Stir-fry for 3-4 minutes.",
-      "Add bell peppers and continue stir-frying for another 2-3 minutes.",
-      "Add sweet corn and green peas. Stir-fry for 2 minutes.",
-      "Add the parboiled rice to the vegetables and mix gently but thoroughly.",
-      "Add curry powder, thyme, seasoning cubes, salt, and bay leaves.",
-      "Gradually add the stock, stirring gently to combine all ingredients.",
-      "Cover and simmer on low heat for 10-15 minutes until rice is fully cooked and has absorbed the liquid.",
-      "Add cooked shrimp or chicken if using, and stir gently.",
-      "Remove bay leaves, adjust seasoning, and serve hot.",
-    ],
-    nutritionalInfo: {
-      calories: "420 per serving",
-      protein: "8g",
-      carbs: "75g",
-      fat: "10g",
-      fiber: "4g",
-    },
-    culturalSignificance:
-      "Nigerian Fried Rice represents celebration and abundance in Nigerian culture. Its colorful appearance symbolizes joy and festivity, making it an essential dish at parties, weddings, and holiday celebrations. The dish demonstrates the Nigerian approach to food presentation - that meals should be visually appealing as well as delicious. It's often prepared in large quantities for sharing, reflecting the communal nature of Nigerian celebrations.",
-    image: "/placeholder.svg?height=800&width=600&text=Nigerian+Fried+Rice",
-    videoId: "xGLN5zSJyw0",
-  },
-  "ofada-rice": {
-    name: "Ofada Rice",
-    description: "Local Nigerian rice served with spicy sauce and assorted meats",
-    longDescription: `
-    Ofada Rice is a special variety of locally grown Nigerian rice, named after the town of Ofada in Ogun State where it was first cultivated. This indigenous rice variety is known for its unique aroma, slightly brown color, and distinctive taste that sets it apart from imported rice varieties.
-
-    What makes Ofada Rice special is not just the rice itself, but the traditional way it's prepared and served. It's typically accompanied by a spicy, flavorful sauce made with palm oil, peppers, and assorted meats. The rice is often wrapped in banana leaves, which imparts a subtle, earthy flavor and keeps it warm.
-
-    Ofada Rice represents a movement towards supporting local agriculture and preserving Nigerian food heritage. It's become increasingly popular as Nigerians embrace indigenous foods and support local farmers. The dish is often served at cultural events and upscale restaurants that specialize in traditional Nigerian cuisine.
-  `,
-    ingredients: [
-      "3 cups Ofada rice (or brown local rice)",
-      "Water for cooking",
-      "Salt to taste",
-      "Banana leaves for wrapping (optional)",
-      "",
-      "For the sauce:",
-      "1/2 cup palm oil",
-      "4 red bell peppers, blended",
-      "3 scotch bonnet peppers, blended",
-      "1 large onion, sliced",
-      "Assorted meat (beef, tripe, kidney)",
-      "Smoked fish",
-      "2 tablespoons locust beans (iru)",
-      "Seasoning cubes",
-      "Salt to taste",
-    ],
-    instructions: [
-      "Wash the Ofada rice thoroughly, removing any stones or chaff. The rice may have more debris than regular rice.",
-      "Boil water in a pot with a little salt. Add the washed rice and cook until tender but not mushy.",
-      "Drain the rice and set aside. If using banana leaves, blanch them and use to wrap portions of rice.",
-      "For the sauce: Heat palm oil in a pot. Add sliced onions and fry until golden.",
-      "Add the blended peppers and cook for 15-20 minutes until the raw smell disappears.",
-      "Add the assorted meat, smoked fish, locust beans, seasoning cubes, and salt.",
-      "Simmer for 10-15 minutes until the meat is well incorporated into the sauce.",
-      "Adjust seasoning to taste.",
-      "Serve the rice with the spicy sauce on the side or poured over the rice.",
-    ],
-    nutritionalInfo: {
-      calories: "450 per serving",
       protein: "15g",
-      carbs: "70g",
-      fat: "12g",
-      fiber: "3g",
+      carbs: "30g",
+      fat: "10g",
+      fiber: "7g",
     },
     culturalSignificance:
-      "Ofada Rice represents Nigerian agricultural heritage and the movement to support local food production. It's a symbol of cultural pride and economic independence, encouraging Nigerians to embrace indigenous foods over imported alternatives. The dish is often served at cultural festivals and events that celebrate Nigerian heritage, representing a connection to the land and traditional farming practices.",
-    image: "/placeholder.svg?height=800&width=600&text=Ofada+Rice+Local+Nigerian",
-    videoId: "yRRxo-z4NWI",
+      "Moin Moin is a cherished dish in Nigerian culture, symbolizing care and culinary artistry. It's a staple at all types of gatherings, from family breakfasts to elaborate parties, often prepared with pride and served with various accompaniments. The intricate process of peeling and blending the beans highlights the dedication to traditional cooking methods and the importance of food in communal celebrations.",
+    image: "https://i.pinimg.com/1200x/10/8b/49/108b49028e9b0dcd75e1fcc00b7064da.jpg",
+    videoId: "JMWHSmMPQTI",
   },
-  "tuwo-shinkafa": {
-    name: "Tuwo Shinkafa",
-    description: "Rice pudding often served with soups",
+  // --- Missing Swallows ---
+  iyan: {
+    name: "Iyan",
+    description: "Pounded yam with a smooth, stretchy texture, a staple swallow",
     longDescription: `
-      Tuwo Shinkafa is a traditional Northern Nigerian dish made from rice flour. The name literally translates to "rice swallow" in Hausa language. This smooth, stretchy dish is similar to other Nigerian swallows but is made specifically from rice, making it a great alternative for those who prefer rice-based foods.
+      Iyan, or pounded yam, is a classic and highly esteemed swallow dish in Nigerian cuisine, particularly among the Yoruba people. It's made by boiling yam tubers until soft, then pounding them with a mortar and pestle until a smooth, dough-like, and stretchy consistency is achieved. The laborious process of pounding is often seen as a labor of love, yielding a staple that is deeply satisfying.
 
-      The preparation involves cooking rice flour with water until it forms a smooth, moldable consistency. Tuwo Shinkafa has a neutral taste and smooth texture that pairs excellently with various Nigerian soups, particularly Northern Nigerian soups like miyan kuka, miyan taushe, or any spicy soup.
+      The perfect Iyan is lump-free, soft, and elastic, making it easy to scoop up with fingers to accompany rich Nigerian soups like Egusi, Efo Riro, or Ogbono. Its neutral taste allows it to absorb the flavors of the accompanying soup, making each bite a delightful experience.
 
-      This dish is particularly popular in Northern Nigeria but has gained acceptance across the country as people explore different regional cuisines. It's naturally gluten-free and provides a good source of carbohydrates.
+      While modern methods sometimes involve blenders or yam flour to achieve a similar consistency, traditionally pounded yam is considered superior in texture and taste, a testament to the authentic culinary heritage it represents.
     `,
-    ingredients: ["2 cups rice flour", "3-4 cups water", "Salt to taste (optional)", "Additional hot water as needed"],
+    ingredients: [
+      "1 large yam tuber (white yam preferred)",
+      "Water for boiling and pounding",
+    ],
     instructions: [
-      "Boil water in a pot with a pinch of salt if desired.",
-      "Gradually add rice flour to the boiling water while stirring continuously to prevent lumps.",
-      "Continue stirring vigorously until the mixture becomes thick and smooth.",
-      "Reduce heat to low and continue cooking while stirring for about 5-10 minutes.",
-      "The mixture should be smooth, stretchy, and moldable when ready.",
-      "If too thick, add hot water gradually. If too thin, cook longer to evaporate excess water.",
-      "Serve immediately while warm with your choice of soup.",
+      "Peel the yam tuber and cut it into medium-sized chunks. Wash thoroughly.",
+      "Place the yam chunks in a pot and add enough water to cover them. Bring to a boil.",
+      "Cook until the yam is very soft and can be easily pierced with a fork (about 20-30 minutes, depending on yam thickness).",
+      "Drain the hot water, reserving a small amount of the cooking water.",
+      "Transfer the soft yam into a clean mortar (or a sturdy food processor/blender with a dough blade).",
+      "Begin pounding the yam vigorously with a pestle (or blend) until it forms a smooth, lump-free dough. Add a tablespoon or two of the reserved hot water if needed to achieve a smoother consistency and prevent it from sticking.",
+      "Continue pounding/blending until the Iyan is smooth, elastic, and has a consistent texture.",
+      "Serve immediately while hot with your favorite Nigerian soup.",
     ],
     nutritionalInfo: {
       calories: "280 per serving",
       protein: "3g",
       carbs: "65g",
       fat: "0.5g",
-      fiber: "1g",
+      fiber: "4g",
     },
     culturalSignificance:
-      "Tuwo Shinkafa represents the diversity of Nigerian cuisine and the regional variations in swallow preparation. It's particularly significant in Northern Nigerian culture and demonstrates how different regions adapt basic cooking techniques to local ingredients and preferences.",
-    image: "/placeholder.svg?height=800&width=600&text=Tuwo+Shinkafa+Rice+Pudding",
+      "Iyan (pounded yam) is a cornerstone of Nigerian culinary tradition, symbolizing hospitality, effort, and authentic home cooking. It's often prepared for special guests, family gatherings, and celebrations, as the traditional pounding process signifies dedication. It holds a place of honor among swallows and is deeply intertwined with cultural identity, especially within Yoruba communities, representing comfort and a well-provided meal.",
+    image: "https://cheflolaskitchen.com/wp-content/uploads/2019/06/DSC0211-pounded-yam.jpg.webp",
+    videoId: "l35CqPxr9bA",
+  },
+  fufu: {
+    name: "Fufu",
+    description: "Cassava flour swallow with a soft, doughy consistency, popular across West Africa",
+    longDescription: `
+      Fufu is a staple food across West and Central Africa, known for its soft, doughy, and sometimes slightly sticky texture. While various ingredients can be used, the most common Fufu in Nigeria is made from fermented cassava. The fermentation process gives it a distinct, slightly tangy flavor.
+
+      To make Fufu, cassava tubers are peeled, soaked, fermented, and then pounded or ground into a smooth paste. This paste is cooked and stirred over heat until it forms a firm yet pliable dough. It's then typically served in balls or lumps alongside a variety of rich soups and stews.
+
+      Fufu is traditionally eaten with the hands, with a small portion broken off, rolled into a ball, indented, and then used to scoop up soup. Its mild flavor makes it an ideal accompaniment for spicy and flavorful Nigerian soups like Egusi, Okra, or Light Soup.
+    `,
+    ingredients: [
+      "2 cups fufu flour (cassava flour)",
+      "4-5 cups hot water",
+      "Additional hot water as needed",
+    ],
+    instructions: [
+      "Bring 4-5 cups of water to a rolling boil in a pot. Reduce heat to low.",
+      "Gradually add fufu flour to the hot water, stirring continuously with a wooden spoon to prevent lumps.",
+      "Continue stirring vigorously until a smooth, thick, and consistent dough forms. This requires strong, consistent stirring.",
+      "If the fufu is too stiff, add a small amount of hot water and continue to stir/pound until the desired soft and smooth consistency is achieved.",
+      "Cover the pot and let it steam on very low heat for 2-3 minutes to cook through.",
+      "Stir again briefly to ensure uniformity.",
+      "Serve hot in desired portions with any Nigerian soup of choice.",
+    ],
+    nutritionalInfo: {
+      calories: "270 per serving",
+      protein: "1g",
+      carbs: "65g",
+      fat: "0.5g",
+      fiber: "2g",
+    },
+    culturalSignificance:
+      "Fufu is a cornerstone of West African cuisine, embodying communal dining and cultural heritage. Its preparation and consumption are deeply ingrained in daily life and celebratory events across various ethnic groups. Eating fufu with soup is a communal experience that fosters connections, and the dish represents sustenance, tradition, and the rich culinary diversity of the region.",
+    image: "https://www.africanbites.com/wp-content/uploads/2022/04/Fufu-1.bmp",
+    videoId: "RSV698GrFHQ",
+  },
+  semo: {
+    name: "Semo",
+    description: "Semolina swallow, a light-colored and smooth accompaniment to Nigerian soups",
+    longDescription: `
+      Semo, short for Semovita, is a popular Nigerian swallow made from semolina flour. It's a modern alternative to traditional swallows like pounded yam or fufu, appreciated for its ease of preparation and relatively light texture. Semolina is a coarse, purified wheat middlings of durum wheat.
+
+      The process of making Semo involves mixing semolina flour with hot water and stirring continuously until a smooth, firm, and stretchy dough is formed. Unlike traditional swallows that require pounding, Semo can be prepared quickly on the stovetop, making it a convenient choice for busy households.
+
+      Semo has a neutral flavor and a light, often pale yellow or off-white color, which makes it a versatile accompaniment to almost any Nigerian soup, including Egusi, Efo Riro, Ogbono, or Okra soup. It's easily digestible and a favorite for those seeking a less dense swallow option.
+    `,
+    ingredients: [
+      "2 cups semolina flour (Semovita)",
+      "3-4 cups hot water",
+      "Additional hot water as needed",
+    ],
+    instructions: [
+      "Bring 3-4 cups of water to a boil in a pot. Reduce heat to low.",
+      "Gradually add semolina flour to the hot water, stirring continuously with a wooden spoon or strong whisk to prevent lumps.",
+      "Continue stirring vigorously and consistently until the mixture forms a smooth, thick dough. Ensure all lumps are broken down.",
+      "If the mixture is too stiff, add small amounts of hot water gradually, continuing to stir until the desired soft, pliable, and stretchy consistency is achieved.",
+      "Cover the pot and let the Semo cook on very low heat for about 2-3 minutes. This steaming helps to cook it thoroughly.",
+      "Give it a final stir to ensure uniform texture.",
+      "Serve hot with any Nigerian soup or stew.",
+    ],
+    nutritionalInfo: {
+      calories: "260 per serving",
+      protein: "7g",
+      carbs: "55g",
+      fat: "1g",
+      fiber: "2g",
+    },
+    culturalSignificance:
+      "Semo represents the evolving landscape of Nigerian cuisine, offering convenience without sacrificing the essence of swallow dishes. While newer, it has quickly integrated into Nigerian culinary practices due to its ease of preparation, making it a common sight in modern households and a popular choice for everyday meals. It reflects adaptability while maintaining the tradition of pairing starchy staples with flavorful soups.",
+    image: "https://shop.axielle.com.ng/wp-content/uploads/2022/11/P1070100.jpg",
+    videoId: "uuxGrvfLrzI",
+  },
+  lafun: {
+    name: "Lafun",
+    description: "Cassava flour swallow with a firm texture, often made from dried cassava",
+    longDescription: `
+      Lafun is a traditional Nigerian swallow made from dried, fermented cassava flour. It is particularly popular in the Southwestern part of Nigeria, among the Yoruba people, and is known for its firm texture and light, almost white color.
+
+      The preparation of Lafun involves processing cassava tubers into a dry, fine powder. This powder is then mixed with boiling water and continuously stirred until it forms a smooth, firm dough. Unlike fufu, which often has a slightly softer consistency, Lafun is characteristically denser and less elastic.
+
+      Lafun is often served with a variety of Nigerian soups, especially those with a rich and hearty base, as its firm texture provides a good contrast to the soup. It's a staple in many Yoruba homes and is valued for its satisfying and filling qualities.
+    `,
+    ingredients: [
+      "2 cups Lafun flour (dried cassava flour)",
+      "4-5 cups hot water",
+      "Additional hot water as needed",
+    ],
+    instructions: [
+      "Bring 4-5 cups of water to a boil in a pot. Reduce heat to low.",
+      "Gradually add Lafun flour to the hot water, stirring continuously with a wooden spoon or strong whisk to prevent lumps.",
+      "Continue stirring vigorously and consistently until the mixture forms a thick, firm dough. Ensure all lumps are broken down.",
+      "If the mixture is too stiff, add small amounts of hot water gradually, continuing to stir until the desired firm yet smooth consistency is achieved. It should be pliable but hold its shape well.",
+      "Cover the pot and let the Lafun cook on very low heat for about 2-3 minutes for thorough cooking.",
+      "Give it a final stir to ensure uniform texture.",
+      "Serve hot with any Nigerian soup or stew.",
+    ],
+    nutritionalInfo: {
+      calories: "280 per serving",
+      protein: "1g",
+      carbs: "68g",
+      fat: "0.5g",
+      fiber: "3g",
+    },
+    culturalSignificance:
+      "Lafun is a deeply traditional swallow, representing an age-old method of preserving and preparing cassava within Yoruba culture. Its presence at the dining table speaks to the historical dietary practices and agricultural resourcefulness of the people. It's a testament to the enduring culinary techniques passed down through generations, offering a robust and fulfilling meal that connects diners to their heritage.",
+    image: "https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/cfc6b66a4bd1cef7adfdbca111d2382d/Derivates/f14c449b43b7f58a48f487edb233c60ba0e5c3fa.jpg",
+    videoId: "0xgFYHAfl74",
+  },
+  eba: {
+    name: "Eba",
+    description: "Garri (cassava) swallow with a slightly sour taste, quick to prepare",
+    longDescription: `
+      Eba is one of Nigeria's most widely consumed swallows, made from garri, a granular flour derived from processed cassava. Its popularity stems from its ease of preparation and versatility, making it a daily staple in many Nigerian homes. Eba is known for its slightly sour taste, which comes from the fermentation of cassava during garri production.
+
+      To prepare Eba, garri is simply mixed with hot water and stirred vigorously until it forms a smooth, firm dough. The texture can range from soft to firm, depending on personal preference and the amount of water used. It comes in various colors, from white to yellow (if palm oil is added during garri processing).
+
+      Eba is an excellent accompaniment to a vast array of Nigerian soups and stews, including Egusi, Okra, Efo Riro, and Gbegiri. It's consumed by hand, rolled into a ball, and used to scoop up the flavorful soup.
+    `,
+    ingredients: [
+      "2 cups garri (cassava flakes)",
+      "2-3 cups hot water",
+      "Additional hot water as needed",
+    ],
+    instructions: [
+      "Boil 2-3 cups of water in a kettle or pot until it's very hot but not necessarily boiling vigorously.",
+      "Pour the hot water into a heatproof bowl or plate. Immediately sprinkle the garri over the hot water, ensuring it's evenly distributed.",
+      "Let the garri soak in the hot water for about 30 seconds to 1 minute, allowing it to absorb the water and soften. Do not stir yet.",
+      "Begin to stir the mixture vigorously with a wooden spoon, mashing and turning until all the garri has absorbed the water and a smooth, lump-free dough forms.",
+      "If the Eba is too stiff, add a very small amount of hot water and continue stirring until the desired soft, pliable consistency is achieved. If it's too soft, you can add a little more dry garri and stir.",
+      "Continue stirring for another 1-2 minutes to ensure it's well combined and thoroughly cooked by the heat.",
+      "Form into desired portions or serve directly from the bowl.",
+      "Serve hot with any Nigerian soup of choice.",
+    ],
+    nutritionalInfo: {
+      calories: "240 per serving",
+      protein: "1g",
+      carbs: "58g",
+      fat: "0.5g",
+      fiber: "2g",
+    },
+    culturalSignificance:
+      "Eba is perhaps the most democratic and ubiquitous swallow in Nigeria, representing affordability, accessibility, and daily sustenance for millions. Its simple preparation makes it a go-to meal, embodying practicality in Nigerian households. It's a staple that transcends social strata and is a familiar comfort food, deeply woven into the fabric of everyday Nigerian life.",
+    image: "https://www.seriouseats.com/thmb/U3lZPxO_i0JElO7mKab094-b0VM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/20220425-Eba-Maureen-Celestine-16-Step3-1-8cbf0f408804485e9a14a158a32b06c3.JPG",
+    videoId: "H8cHJ_JK9FA",
+  },
+  // --- Missing Rice Dishes ---
+  "fried-rice": {
+    name: "Fried Rice",
+    description: "A colorful and flavorful rice dish cooked with mixed vegetables and proteins",
+    longDescription: `
+      Nigerian Fried Rice is a vibrant and aromatic dish that has become a staple at celebrations and everyday meals alike. Unlike some Asian versions, Nigerian Fried Rice is typically cooked with parboiled rice, mixed vegetables like carrots, green beans, sweet corn, and green peas, along with liver, shrimp, or chicken.
+
+      The dish gets its distinctive flavor from curry powder, thyme, and sometimes a hint of ginger and garlic, giving it a rich and savory profile. The vegetables add not only color but also texture and nutritional value, making it a wholesome and appealing meal.
+
+      Often served alongside Jollof Rice, fried plantains, and various forms of protein, Nigerian Fried Rice is a testament to the country's diverse culinary influences and its ability to adapt and perfect dishes. It's a crowd-pleaser that is always a hit at parties and family gatherings.
+    `,
+    ingredients: [
+      "3 cups long-grain parboiled rice",
+      "1/2 cup vegetable oil",
+      "1 large onion, chopped",
+      "1 cup diced carrots",
+      "1 cup green beans, cut into small pieces",
+      "1/2 cup sweet corn",
+      "1/2 cup green peas",
+      "1/2 pound beef liver or chicken, diced (optional)",
+      "1/4 cup chopped green bell pepper",
+      "2 tablespoons soy sauce",
+      "1 tablespoon curry powder",
+      "1 teaspoon dried thyme",
+      "1 seasoning cube",
+      "Salt to taste",
+      "Black pepper to taste",
+      "Water or chicken stock",
+    ],
+    instructions: [
+      "Boil the parboiled rice in lightly salted water for about 10-15 minutes until it's par-boiled (al dente). Drain and rinse with cold water to prevent sticking. Set aside.",
+      "If using liver/chicken, boil and chop into small pieces. Set aside.",
+      "Heat vegetable oil in a large wok or frying pan over medium-high heat. Add chopped onions and sauté until fragrant (1-2 minutes).",
+      "Add diced carrots and green beans. Stir-fry for 3-5 minutes until slightly tender but still crunchy.",
+      "Add sweet corn, green peas, green bell pepper, and the diced liver/chicken (if using). Stir-fry for another 2-3 minutes.",
+      "Push the vegetables to one side of the pan. Add the par-boiled rice to the empty side. Sprinkle curry powder, thyme, seasoning cube, salt, black pepper, and soy sauce over the rice.",
+      "Begin to mix the rice and vegetables together, ensuring all ingredients are well combined and the rice is coated with the spices. Stir-fry for about 5-7 minutes.",
+      "If the rice seems dry, add a splash of water or chicken stock, stirring until absorbed.",
+      "Taste and adjust seasoning if necessary. Serve hot.",
+    ],
+    nutritionalInfo: {
+      calories: "420 per serving",
+      protein: "10g",
+      carbs: "75g",
+      fat: "10g",
+      fiber: "5g",
+    },
+    culturalSignificance:
+      "Nigerian Fried Rice is a symbol of celebration and generosity, a staple at festive gatherings and special occasions. It showcases the vibrant and diverse culinary traditions of Nigeria, blending local ingredients with international influences. Its presence often signifies a well-catered event, embodying abundance and the joy of shared meals within Nigerian communities.",
+    image: "https://i.pinimg.com/1200x/44/67/f4/4467f46691bf41143404de960757ddbd.jpg",
+    videoId: "xGLN5zSJyw0",
+  },
+  "ofada-rice": {
+    name: "Ofada Rice",
+    description: "Local Nigerian rice served with a special spicy stew (Ayamase)",
+    longDescription: `
+      Ofada Rice is a unique local Nigerian rice variety, characterized by its short, plump grains and distinctive aroma (which some describe as slightly earthy or fermented). It is traditionally served with a rich, spicy, and green-colored stew called "Ayamase" or "Ofada Stew."
+
+      The rice itself is often processed and sold unpolished, retaining more of its natural nutrients and a rustic flavor. The Ayamase stew, a perfect complement, is made from unripe scotch bonnet peppers, green bell peppers, onions, palm oil, and various assorted meats like offal (shaki, bokoto, fuku), and sometimes boiled eggs. The palm oil is typically 'bleached' (heated until it changes color and loses its raw taste), which gives the stew its characteristic dark red-orange hue and smoky flavor.
+
+      Ofada Rice with Ayamase is a beloved combination, especially popular in Southwestern Nigeria. It's often wrapped and served in moin-moin leaves (ewé eran) or banana leaves, which further enhance its unique aroma and traditional appeal. It's a true culinary experience, bursting with authentic Nigerian flavors.
+    `,
+    ingredients: [
+      "2 cups Ofada rice",
+      "For Ayamase (Ofada Stew):",
+      "1 cup unripe scotch bonnet peppers (ata rodo), blended roughly",
+      "1/2 cup green bell peppers, blended roughly",
+      "1 large onion, blended roughly",
+      "1 cup bleached palm oil",
+      "Assorted meats (shaki, bokoto, fuku), pre-boiled",
+      "Smoked fish or smoked turkey (optional)",
+      "Locust beans (iru) - 2 tablespoons",
+      "Seasoning cubes - to taste",
+      "Salt to taste",
+      "Optional: Crayfish",
+    ],
+    instructions: [
+      "Prepare Ofada Rice: Pick and rinse the Ofada rice thoroughly to remove stones and impurities. Boil in enough water until tender (it might need more water than regular rice due to its texture). Drain and set aside.",
+      "Prepare Ayamase: Heat palm oil in a pot over medium-high heat until it is 'bleached' (it will change to a lighter color and start smoking lightly - ensure good ventilation). Turn off heat and let it cool slightly to prevent burning.",
+      "Carefully add the roughly blended pepper and onion mixture to the cooled bleached palm oil. Return to medium heat and fry, stirring occasionally, until the water has evaporated and the oil separates from the stew (about 15-20 minutes).",
+      "Add locust beans (iru), seasoning cubes, salt, and crayfish (if using). Stir well.",
+      "Add the pre-boiled assorted meats and smoked fish/turkey (if using) to the stew. Stir to coat thoroughly.",
+      "Let the stew simmer for another 10-15 minutes, allowing the flavors to meld and the meats to absorb the stew's richness.",
+      "Serve the Ofada rice hot, with a generous portion of Ayamase stew, traditionally wrapped in leaves.",
+    ],
+    nutritionalInfo: {
+      calories: "500 per serving",
+      protein: "25g",
+      carbs: "60g",
+      fat: "20g",
+      fiber: "7g",
+    },
+    culturalSignificance:
+      "Ofada Rice and Ayamase stew represent a deep connection to Nigerian culinary heritage, particularly within the Yoruba culture. It's a dish often associated with traditional gatherings, markets, and local eateries, celebrated for its bold flavors and unique preparation. The use of specific local ingredients and traditional serving methods underscores its cultural authenticity, making it a beloved symbol of Nigerian indigenous cuisine.",
+    image: "https://i.pinimg.com/736x/90/0a/f2/900af2ced732a9492ced80541d94d705.jpg",
+    videoId: "yRRxo-z4NWI",
+  },
+  "tuwo-shinkafa": {
+    name: "Tuwo Shinkafa",
+    description: "A soft, doughy swallow made from non-glutinous rice, popular in Northern Nigeria",
+    longDescription: `
+      Tuwo Shinkafa is a traditional swallow dish originating from Northern Nigeria, particularly popular among the Hausa and Fulani ethnic groups. It is made from soft, non-glutinous rice, cooked and pounded or mashed into a smooth, thick, and very soft dough. The name "Tuwo Shinkafa" literally means "rice swallow" in Hausa.
+
+      Unlike other swallows that can be quite firm, Tuwo Shinkafa is known for its exceptionally soft and almost melt-in-your-mouth texture, making it very easy to swallow. Its mild flavor makes it an excellent accompaniment to a variety of rich and savory soups from Northern Nigeria, such as Miyar Kuka (Baobab leaf soup) or Miyar Taushe (Groundnut soup with pumpkin).
+
+      It's a staple in many Northern Nigerian homes and is often served as a comforting and fulfilling meal, embodying the simple yet hearty nature of the region's cuisine.
+    `,
+    ingredients: [
+      "2 cups long-grain rice (non-glutinous)",
+      "4-5 cups water",
+      "Additional water as needed",
+    ],
+    instructions: [
+      "Wash the rice thoroughly. Place in a pot and add 4-5 cups of water.",
+      "Bring to a boil, then reduce heat to medium-low. Cook until the rice is very soft and mushy, stirring occasionally.",
+      "Once the rice is very soft and almost porridge-like, begin to mash it vigorously with a wooden spoon against the sides of the pot. Continue mashing until it forms a smooth, lump-free, doughy consistency.",
+      "If the mixture is too thick or difficult to mash, add a little hot water gradually and continue mashing until the desired soft and smooth consistency is achieved.",
+      "Gather the Tuwo into a ball in the pot, cover, and let it steam on low heat for 2-3 minutes to firm up slightly.",
+      "Scoop into desired portions, shaping into smooth balls.",
+      "Serve hot with any traditional Northern Nigerian soup.",
+    ],
+    nutritionalInfo: {
+      calories: "270 per serving",
+      protein: "5g",
+      carbs: "60g",
+      fat: "0.5g",
+      fiber: "2g",
+    },
+    culturalSignificance:
+      "Tuwo Shinkafa is a central culinary emblem of Northern Nigeria, representing the region's staple diet and communal eating practices. It's a common sight at everyday meals and particularly at festive occasions, symbolizing hospitality and the rich cultural identity of the Hausa and Fulani people. Its soft texture is associated with comfort and easy sustenance, deeply ingrained in the local culinary heritage.",
+    image: "https://i.pinimg.com/1200x/62/59/2c/62592c26a2180c666fe5eaa86f8249aa.jpg",
     videoId: "BKUgOBK_ii8",
   },
   "coconut-rice": {
     name: "Coconut Rice",
-    description: "Rice cooked with coconut milk and spices",
+    description: "Fragrant rice cooked with coconut milk, offering a rich and subtly sweet flavor",
     longDescription: `
-      Coconut Rice is a fragrant and flavorful Nigerian rice dish cooked with coconut milk, giving it a rich, creamy texture and a subtle coconut flavor. This dish is popular across West Africa and is often served at special occasions and celebrations.
+      Nigerian Coconut Rice is a deliciously fragrant and flavorful rice dish cooked with coconut milk. It offers a rich, creamy, and subtly sweet taste that distinguishes it from other rice preparations. It's a beloved dish that finds its way onto family tables and special event menus.
 
-      The coconut milk not only adds flavor but also gives the rice a beautiful creamy white color and rich texture. The dish is often enhanced with spices like curry, thyme, and bay leaves, creating a aromatic and satisfying meal.
+      The dish typically combines parboiled rice with freshly grated coconut milk (or canned coconut milk), onions, bell peppers, sometimes prawns or chicken, and a blend of mild spices like curry powder and thyme. The coconut milk infuses the rice with its unique aroma and creates a wonderfully tender texture.
 
-      Coconut Rice can be served as a main dish or as a side dish alongside grilled meats, fish, or vegetables. It's particularly popular at parties and special events due to its elegant appearance and delicious taste.
+      Coconut Rice can be served as a main dish or as a side, often accompanied by fried chicken, fish, or a simple vegetable salad. It's a comforting meal that showcases the versatility of rice in Nigerian cuisine and is a favorite for those who enjoy a hint of sweetness and tropical flavor in their savory dishes.
     `,
     ingredients: [
-      "3 cups long-grain rice",
-      "1 can (400ml) coconut milk",
-      "2 cups water or chicken stock",
-      "1 large onion, diced",
-      "2 cloves garlic, minced",
-      "1 teaspoon curry powder",
-      "1 teaspoon thyme",
-      "2 bay leaves",
-      "2 seasoning cubes",
+      "3 cups parboiled rice",
+      "2 cups coconut milk (from fresh coconut or canned)",
+      "1 large onion, sliced",
+      "1-2 red bell peppers, diced (optional)",
+      "1-2 scotch bonnet peppers, minced (optional, for heat)",
+      "1/4 cup vegetable oil",
+      "1/2 cup pre-cooked prawns or shredded chicken (optional)",
+      "1 tablespoon curry powder",
+      "1 teaspoon dried thyme",
+      "1 seasoning cube",
       "Salt to taste",
-      "2 tablespoons vegetable oil",
-      "1 cup mixed vegetables (optional)",
+      "Water or chicken stock (if needed)",
     ],
     instructions: [
-      "Wash rice thoroughly and set aside.",
-      "Heat oil in a large pot and sauté onions and garlic until fragrant.",
-      "Add curry powder and thyme, stir for 1 minute.",
-      "Add the washed rice and stir to coat with the spices.",
-      "Pour in coconut milk, water/stock, add bay leaves, seasoning cubes, and salt.",
-      "Bring to a boil, then reduce heat to low and cover.",
-      "Cook for 20-25 minutes until rice is tender and liquid is absorbed.",
-      "Add mixed vegetables in the last 5 minutes if using.",
-      "Let rest for 5 minutes before serving.",
+      "Wash the parboiled rice thoroughly until the water runs clear. Set aside.",
+      "Heat vegetable oil in a large pot over medium heat. Add sliced onions and sauté until translucent.",
+      "Add diced bell peppers and minced scotch bonnet peppers (if using). Sauté for 2-3 minutes.",
+      "Add curry powder, thyme, seasoning cube, and salt. Stir well.",
+      "Pour in the coconut milk. Add a bit of water or stock if the liquid doesn't seem enough to cook the rice. Bring to a boil.",
+      "Add the washed rice to the boiling coconut milk mixture. Stir once, then cover the pot tightly.",
+      "Reduce heat to low and cook for about 20-25 minutes, or until the rice is tender and has absorbed all the liquid.",
+      "If using prawns or chicken, stir them in during the last 5-10 minutes of cooking.",
+      "Once cooked, fluff the rice with a fork.",
+      "Serve hot as a main dish or a side.",
     ],
     nutritionalInfo: {
-      calories: "420 per serving",
-      protein: "6g",
-      carbs: "68g",
-      fat: "14g",
-      fiber: "2g",
+      calories: "450 per serving",
+      protein: "8g",
+      carbs: "65g",
+      fat: "18g",
+      fiber: "3g",
     },
     culturalSignificance:
-      "Coconut Rice represents the influence of coastal ingredients in Nigerian cuisine. It's often served at celebrations and demonstrates the creativity in Nigerian cooking, where local ingredients are combined with international influences to create unique dishes.",
-    image: "/placeholder.svg?height=800&width=600&text=Coconut+Rice",
+      "Coconut Rice in Nigeria represents a delightful fusion of flavors and is a testament to the country's diverse culinary landscape. It's often prepared for special family occasions, signifying a step beyond everyday meals. The tropical notes from the coconut highlight Nigeria's rich agricultural bounty and its culinary creativity in transforming simple ingredients into a festive and comforting dish.",
+    image: "https://i.pinimg.com/736x/30/07/41/3007413793be74c835ef5ca9a8fa814c.jpg",
     videoId: "CHYTUzyhgbE",
   },
+  // --- Missing Snacks ---
   "puff-puff": {
     name: "Puff Puff",
-    description: "Deep-fried dough balls with a sweet taste",
+    description: "Deep-fried dough balls, a popular street food snack",
     longDescription: `
-    Puff Puff is one of Nigeria's most beloved snacks, enjoyed across all regions and age groups. These golden, spherical deep-fried dough balls are crispy on the outside and soft, fluffy on the inside. The name "Puff Puff" comes from the light, airy texture that results from the fermentation process and proper frying technique.
+      Puff Puff is a beloved deep-fried dough snack, popular across West Africa, particularly in Nigeria. These delightful golden-brown balls are light, airy, and slightly sweet, making them an irresistible street food and party snack.
 
-    This popular street food and party snack is made from a simple batter of flour, sugar, yeast, and water, which is allowed to rise before being deep-fried in hot oil. The fermentation process gives Puff Puff its characteristic slightly tangy flavor and light texture. The key to perfect Puff Puff lies in achieving the right consistency of batter and maintaining the correct oil temperature during frying.
+      Made from a simple batter of flour, sugar, yeast, and water, the mixture is left to rise before being deep-fried until puffed and golden. The outside is slightly crispy, while the inside remains soft and chewy. They are often served plain, but can also be dusted with powdered sugar, cinnamon, or dipped in a light syrup for extra sweetness.
 
-    Puff Puff is incredibly versatile and can be enjoyed at any time of day - as a breakfast item, afternoon snack, or party treat. It's commonly sold by street vendors and is a staple at Nigerian celebrations, from children's birthday parties to wedding receptions. The snack represents the joy and communal spirit of Nigerian food culture.
-  `,
+      Puff Puff is a versatile snack, enjoyed at any time of day – for breakfast, as a quick bite, or as part of a spread at gatherings and celebrations. Its simplicity and widespread appeal make it a quintessential Nigerian treat.
+    `,
     ingredients: [
-      "3 cups all-purpose flour",
-      "1/2 cup granulated sugar",
-      "1 teaspoon active dry yeast",
-      "1/2 teaspoon salt",
-      "1 teaspoon ground nutmeg",
-      "1 1/4 cups warm water",
-      "1 teaspoon vanilla extract (optional)",
+      "2 cups all-purpose flour",
+      "1/2 cup granulated sugar (adjust to taste)",
+      "2 teaspoons active dry yeast",
+      "1/2 teaspoon ground nutmeg (optional)",
+      "1/4 teaspoon salt",
+      "1 1/2 cups warm water",
       "Vegetable oil for deep frying",
     ],
     instructions: [
-      "In a large bowl, mix flour, sugar, yeast, salt, and nutmeg together.",
-      "Gradually add warm water while mixing to form a smooth batter. The consistency should be thick but pourable.",
-      "Add vanilla extract if using and mix well.",
-      "Cover the bowl with a clean cloth and let the batter rise in a warm place for 1-2 hours until it doubles in size and becomes bubbly.",
-      "Heat vegetable oil in a deep pot to 350°F (175°C). The oil should be deep enough for the puff puff to float.",
-      "Using your hands or a spoon, scoop small portions of batter and carefully drop them into the hot oil.",
-      "Fry in batches, turning occasionally, until golden brown all over (about 3-5 minutes).",
-      "Remove with a slotted spoon and drain on paper towels.",
-      "Serve warm or at room temperature. Can be dusted with powdered sugar if desired.",
+      "In a large bowl, combine the flour, sugar, yeast, nutmeg (if using), and salt. Mix well.",
+      "Gradually add the warm water to the dry ingredients, mixing with a wooden spoon or your hand until a smooth, slightly sticky batter forms. Ensure there are no lumps.",
+      "Cover the bowl with a clean kitchen towel or plastic wrap and let it rise in a warm place for 45 minutes to 1 hour, or until doubled in size. The batter should be light and bubbly.",
+      "Heat vegetable oil in a deep pot or fryer over medium heat. The oil should be hot enough (around 350-375°F / 175-190°C) to fry the puff puff without soaking too much oil.",
+      "Once the oil is hot and the batter has risen, gently stir the batter down slightly. Using your hand (squeezing a small amount through your thumb and index finger) or two spoons, drop small balls of batter into the hot oil.",
+      "Fry a few pieces at a time to avoid overcrowding the pot. The puff puff will puff up and turn golden brown.",
+      "Fry, turning occasionally, until all sides are evenly golden brown and cooked through (about 3-5 minutes per batch).",
+      "Remove with a slotted spoon and place on a wire rack lined with paper towels to drain excess oil.",
+      "Serve warm, plain, or dusted with powdered sugar.",
     ],
     nutritionalInfo: {
-      calories: "180 per serving (4 pieces)",
-      protein: "4g",
-      carbs: "28g",
+      calories: "180 per serving (3-4 pieces)",
+      protein: "3g",
+      carbs: "30g",
       fat: "6g",
       fiber: "1g",
     },
     culturalSignificance:
-      "Puff Puff is deeply embedded in Nigerian culture as a symbol of celebration and joy. It's one of the first snacks children learn to make and is associated with happy memories and gatherings. The snack transcends ethnic and religious boundaries, being enjoyed by all Nigerians regardless of background. It's often prepared in large quantities for sharing, reflecting the communal nature of Nigerian hospitality.",
-    image: "/placeholder.svg?height=800&width=600&text=Puff+Puff+Nigerian+Snack",
+      "Puff Puff is an iconic Nigerian street food, symbolizing casual enjoyment and communal sharing. It's a ubiquitous snack found at markets, ceremonies, and school gates, representing the everyday joy of Nigerian life. Its simplicity and widespread appeal make it a universally loved treat, bridging generational and social divides, and often evoking nostalgic memories.",
+    image: "https://i.pinimg.com/1200x/c3/98/b0/c398b02e7b36efd986be50d3822cbbc5.jpg",
     videoId: "TEDlOe8Qob4",
   },
-
   akara: {
     name: "Akara",
-    description: "Bean cakes made from peeled beans and spices",
+    description: "Deep-fried bean cakes made from peeled beans and spices, a popular breakfast item",
     longDescription: `
-    Akara, also known as bean cakes or bean fritters, is a popular Nigerian breakfast and snack made from peeled black-eyed peas. This protein-rich delicacy is beloved for its crispy exterior and soft, flavorful interior. The name "Akara" comes from the Yoruba language, though the dish is enjoyed throughout Nigeria and West Africa.
+      Akara, also known as Acarajé in Brazil, is a popular West African dish consisting of deep-fried bean cakes. Made from a batter of peeled beans, blended with onions and peppers, Akara is a crunchy yet soft snack often enjoyed for breakfast or as a light meal.
 
-    The preparation of Akara involves soaking and peeling black-eyed peas, then blending them with peppers, onions, and spices to create a smooth batter. The batter is then deep-fried in small portions until golden brown and crispy. The key to perfect Akara lies in achieving the right consistency of batter and maintaining proper oil temperature during frying.
+      The process involves soaking and peeling black-eyed peas (or brown beans), then blending them with onions, scotch bonnet peppers, and sometimes bell peppers, into a light, airy batter. This batter is then deep-fried in hot oil until golden brown and crispy on the outside, and fluffy on the inside.
 
-    Akara is traditionally served as a breakfast item alongside bread, pap (ogi), or custard. It's also popular as a snack throughout the day and is commonly sold by street vendors. The dish is naturally gluten-free and provides an excellent source of plant-based protein, making it a nutritious choice for people of all ages.
-  `,
+      Akara is commonly served hot, often with bread (creating a popular combo called 'Akara and Bread'), pap (akamu/ogi), or simply as a standalone snack. Its savory, slightly spicy flavor makes it a comforting and satisfying treat enjoyed across Nigeria.
+    `,
     ingredients: [
-      "2 cups black-eyed peas, soaked overnight",
-      "1 medium onion, roughly chopped",
-      "2-3 scotch bonnet peppers (adjust to taste)",
-      "1 red bell pepper",
-      "1 teaspoon salt",
-      "1 seasoning cube, crushed",
-      "1/4 cup water (as needed)",
+      "2 cups black-eyed peas (or brown beans), peeled",
+      "1 large onion, roughly chopped",
+      "2-3 scotch bonnet peppers (ata rodo) - adjust to taste",
+      "Salt to taste",
       "Vegetable oil for deep frying",
+      "Water (a few tablespoons, if needed for blending)",
     ],
     instructions: [
-      "Drain the soaked beans and rub them between your palms to remove the skins. Rinse until all skins are removed.",
-      "In a blender or food processor, blend the peeled beans with onions, peppers, and a little water until smooth but not too watery.",
-      "Transfer the mixture to a bowl and add salt and crushed seasoning cube. Mix well.",
-      "Using a wooden spoon, beat the mixture vigorously for 2-3 minutes to incorporate air and make it fluffy.",
-      "Heat oil in a deep pot to 350°F (175°C).",
-      "Using a spoon, scoop portions of the batter and carefully drop them into the hot oil.",
-      "Fry in batches until golden brown and crispy on all sides (about 4-6 minutes).",
-      "Remove with a slotted spoon and drain on paper towels.",
-      "Serve hot with bread, pap, or your preferred accompaniment.",
+      "Soak the beans for at least 30 minutes, then peel them thoroughly (rubbing them together to loosen the skin and rinsing repeatedly). This is crucial for smooth Akara.",
+      "Combine the peeled beans, roughly chopped onion, and scotch bonnet peppers in a blender. Add a few tablespoons of water if necessary to help blend, but keep the mixture as thick as possible.",
+      "Blend until very smooth and creamy. The smoother the batter, the lighter the Akara.",
+      "Pour the batter into a large bowl. Using a stand mixer, hand mixer, or by hand with a whisk, beat the batter vigorously for 10-15 minutes until it is light, fluffy, and has significantly increased in volume. This step is essential for airy Akara.",
+      "Stir in salt to taste. Do not overmix after adding salt.",
+      "Heat vegetable oil in a deep pot over medium-high heat. The oil should be hot enough (around 350-375°F / 175-190°C) for deep frying.",
+      "Using a spoon or scoop, carefully drop spoonfuls of the Akara batter into the hot oil.",
+      "Fry a few pieces at a time, turning occasionally, until golden brown and crispy on all sides (3-5 minutes per batch).",
+      "Remove the Akara with a slotted spoon and place on a wire rack lined with paper towels to drain excess oil.",
+      "Serve hot with bread, pap, or as a standalone snack.",
     ],
     nutritionalInfo: {
-      calories: "150 per serving (3 pieces)",
+      calories: "200 per serving (2-3 cakes)",
       protein: "8g",
-      carbs: "18g",
-      fat: "5g",
-      fiber: "6g",
+      carbs: "20g",
+      fat: "10g",
+      fiber: "5g",
     },
     culturalSignificance:
-      "Akara holds special significance in Nigerian culture as a traditional breakfast food that brings families together. It's often prepared by mothers and grandmothers as a way of showing care and love. The dish is also significant in Yoruba traditional religion and is sometimes used in ceremonial offerings. Akara represents the ingenuity of Nigerian cuisine in transforming simple ingredients into delicious, nutritious meals.",
-    image: "/placeholder.svg?height=800&width=600&text=Akara+Bean+Cakes",
+      "Akara is a staple of Nigerian breakfast and street food culture, embodying the comfort and simplicity of traditional cooking. Its presence at breakfast tables, often paired with pap (fermented corn pudding) or bread, signifies a communal start to the day. It also represents resourcefulness, transforming humble beans into a beloved and nutritious snack that is widely accessible and enjoyed by all.",
+    image: "https://i.pinimg.com/736x/20/38/fa/2038fa4ed5f75711434ec35b5ec517e6.jpg",
     videoId: "A5bu-XE53es",
   },
-
   "chin-chin": {
     name: "Chin Chin",
-    description: "Fried pastry snack with a crunchy texture",
+    description: "Crunchy fried pastry snack, sweet and often flavored with nutmeg",
     longDescription: `
-    Chin Chin is a popular Nigerian fried pastry snack known for its sweet, crunchy texture and addictive taste. This beloved treat is made from a simple dough of flour, sugar, butter, and spices, which is rolled out, cut into small cubes, and deep-fried until golden brown and crispy.
+      Chin Chin is a popular crunchy fried snack across West Africa, particularly Nigeria. It's a sweet, biscuit-like pastry made from a dough containing flour, sugar, eggs, butter (or margarine), and often flavored with nutmeg. The dough is rolled out and cut into various shapes (squares, strips, or abstract forms) before being deep-fried until golden brown and crispy.
 
-    The beauty of Chin Chin lies in its simplicity and versatility. The basic recipe can be enhanced with various flavors such as nutmeg, vanilla, or even coconut flakes. The dough is typically enriched with butter or margarine, which gives the finished product its characteristic rich flavor and crispy texture.
+      The appeal of Chin Chin lies in its satisfying crunch and balanced sweetness. It's a versatile snack that can be made softer and chewier or harder and crunchier, depending on the dough's consistency and frying time.
 
-    Chin Chin is a staple at Nigerian celebrations, parties, and festive occasions. It's often prepared in large batches and stored in airtight containers, making it a convenient snack that can last for weeks. The snack is particularly popular during Christmas and New Year celebrations, where it's often packaged as gifts for friends and family.
-  `,
+      Chin Chin is a ubiquitous treat during festive periods like Christmas, Eid, and New Year, and is a common sight at parties, weddings, and family gatherings. It's often prepared in large batches and stored in airtight containers, making it a convenient snack to offer guests or enjoy over time.
+    `,
     ingredients: [
       "4 cups all-purpose flour",
-      "1/2 cup granulated sugar",
-      "1/2 cup butter or margarine, softened",
+      "1 cup granulated sugar",
+      "1/2 cup unsalted butter or margarine, softened",
       "2 large eggs",
+      "1/2 cup milk (or evaporated milk)",
       "1 teaspoon baking powder",
-      "1/2 teaspoon salt",
-      "1 teaspoon ground nutmeg",
-      "1/4 cup milk",
-      "1 teaspoon vanilla extract",
+      "1/2 teaspoon ground nutmeg",
+      "Pinch of salt",
       "Vegetable oil for deep frying",
     ],
     instructions: [
-      "In a large bowl, cream together butter and sugar until light and fluffy.",
-      "Add eggs one at a time, beating well after each addition. Add vanilla extract.",
-      "In a separate bowl, whisk together flour, baking powder, salt, and nutmeg.",
-      "Gradually add the dry ingredients to the butter mixture, alternating with milk, until a soft dough forms.",
-      "Turn the dough onto a floured surface and knead briefly until smooth.",
-      "Roll the dough to about 1/4 inch thickness and cut into small cubes (about 1/2 inch).",
-      "Heat oil in a deep pot to 350°F (175°C).",
-      "Fry the chin chin cubes in batches until golden brown and crispy (about 3-4 minutes).",
-      "Remove with a slotted spoon and drain on paper towels.",
-      "Allow to cool completely before storing in airtight containers.",
+      "In a large bowl, whisk together the flour, baking powder, ground nutmeg, and salt. Set aside.",
+      "In a separate bowl, cream together the softened butter and sugar until light and fluffy.",
+      "Beat in the eggs one at a time, ensuring each is fully incorporated before adding the next.",
+      "Gradually add the dry ingredients to the wet ingredients, alternating with the milk. Mix until a firm, non-sticky dough forms. You might not need all the milk.",
+      "Transfer the dough to a lightly floured surface and knead gently for a few minutes until smooth.",
+      "Divide the dough into manageable portions. Roll out each portion using a rolling pin until it's about 1/4 inch thick.",
+      "Using a sharp knife or a pastry cutter, cut the dough into desired shapes (small squares, strips, or diamond shapes).",
+      "Heat vegetable oil in a deep pot or fryer over medium heat (around 325-350°F / 160-175°C).",
+      "Carefully drop the Chin Chin pieces into the hot oil, frying in batches to avoid overcrowding. Stir gently to ensure even browning.",
+      "Fry until golden brown and crispy (about 5-7 minutes per batch). The color should be uniform.",
+      "Remove with a slotted spoon and transfer to a wire rack lined with paper towels to drain excess oil.",
+      "Allow to cool completely before storing in an airtight container.",
     ],
     nutritionalInfo: {
-      calories: "120 per serving (1/4 cup)",
-      protein: "3g",
-      carbs: "18g",
-      fat: "4g",
-      fiber: "1g",
+      calories: "150 per serving (approx. 1/4 cup)",
+      protein: "2g",
+      carbs: "25g",
+      fat: "5g",
+      fiber: "0.5g",
     },
     culturalSignificance:
-      "Chin Chin is synonymous with Nigerian celebrations and hospitality. It's often the first snack offered to guests and is a symbol of abundance and prosperity. The preparation of Chin Chin is often a communal activity, with family members gathering to help cut and fry the pastry. It's particularly associated with Christmas celebrations and is considered an essential part of the festive season.",
-    image: "/placeholder.svg?height=800&width=600&text=Chin+Chin+Fried+Pastry",
-    videoId: "bFksxx4YPko", // Updated with proper Chin Chin video
+      "Chin Chin is synonymous with Nigerian festivities and hospitality. It's a celebratory snack, symbolizing joy and sharing, especially during holidays, weddings, and other social gatherings. The act of preparing Chin Chin in large quantities reflects community spirit and generosity, making it a beloved symbol of Nigerian family traditions and good times.",
+    image: "https://i.pinimg.com/1200x/8c/43/51/8c43517573225c2ba7b4eb857acf5c2d.jpg",
+    videoId: "Ru7avaYvdfI",
   },
-
   dundu: {
     name: "Dundu",
-    description: "Fried yam cubes often served with pepper sauce",
+    description: "Fried yam cubes, a popular street food often served with pepper sauce (ata dindin)",
     longDescription: `
-    Dundu is a popular Nigerian snack made from fried yam cubes, beloved for its crispy exterior and soft, fluffy interior. The name "Dundu" comes from the Yoruba language, and this simple yet satisfying snack is enjoyed across Nigeria as both a street food and homemade treat.
+      Dundu, simply put, is fried yam. It is a very popular street food and snack in Nigeria, particularly among the Yoruba people. Made from white yam tubers, which are peeled, cut into cubes or slices, and then deep-fried until golden brown and slightly crispy on the outside, while remaining soft and fluffy on the inside.
 
-    The preparation of Dundu involves cutting yam into uniform cubes, seasoning them lightly with salt, and deep-frying until golden brown and crispy. The key to perfect Dundu lies in selecting the right type of yam - it should be firm and not too watery - and maintaining the correct oil temperature to achieve the desired crispy texture without burning.
+      The beauty of Dundu lies in its simplicity and versatility. It has a mild, earthy taste that perfectly complements spicy sauces. It is most commonly served with 'Ata Dindin', a fiery fried pepper sauce, or sometimes with a simple stew.
 
-    Dundu is typically served with spicy pepper sauce (ata dindin) or tomato-based stew, making it a complete and satisfying snack. It's commonly sold by street vendors and is a popular after-school snack for children. The dish represents the Nigerian ability to transform simple, local ingredients into delicious and satisfying meals.
-  `,
+      Dundu is a satisfying and filling snack or light meal, often enjoyed on the go. Its popularity reflects the significant role of yam as a staple crop and a culinary delight in West Africa.
+    `,
     ingredients: [
-      "2 large yams, peeled and cut into cubes",
-      "1 teaspoon salt",
-      "Vegetable oil for deep frying",
-      "",
-      "For pepper sauce (optional):",
-      "4 scotch bonnet peppers",
-      "1 large onion",
-      "2 tomatoes",
+      "1 medium-sized white yam tuber",
       "Salt to taste",
-      "1 seasoning cube",
+      "Vegetable oil for deep frying",
+      "Water for rinsing",
     ],
     instructions: [
-      "Cut the peeled yam into uniform cubes (about 1-2 inches).",
-      "Rinse the yam cubes in cold water and pat dry with paper towels.",
-      "Season lightly with salt and let sit for 10 minutes.",
-      "Heat oil in a deep pot to 350°F (175°C).",
-      "Carefully add yam cubes to the hot oil in batches, avoiding overcrowding.",
-      "Fry until golden brown and crispy on all sides (about 5-7 minutes).",
-      "Remove with a slotted spoon and drain on paper towels.",
-      "For pepper sauce: Blend peppers, onion, and tomatoes. Cook in a little oil with salt and seasoning cube until thick.",
-      "Serve Dundu hot with pepper sauce on the side.",
+      "Peel the yam tuber and cut it into desired shapes – typically cubes, sticks, or round slices about 1/2 inch thick.",
+      "Wash the yam pieces thoroughly in cold water to remove excess starch. Drain well.",
+      "Lightly sprinkle the yam pieces with salt and toss to coat evenly.",
+      "Heat vegetable oil in a deep pot or frying pan over medium-high heat. The oil should be hot enough (around 350-375°F / 175-190°C) to deep-fry the yam (around 350-375°F / 175-190°C).",
+      "Carefully add the yam pieces to the hot oil in batches, ensuring not to overcrowd the pot. Overcrowding will reduce the oil temperature and make the yam soggy.",
+      "Fry, turning occasionally, until the yam pieces are golden brown and crispy on the outside, and cooked through and tender on the inside (about 5-8 minutes per batch, depending on size).",
+      "Remove the fried yam with a slotted spoon and place on a wire rack lined with paper towels to drain excess oil.",
+      "Serve hot, typically with a spicy pepper sauce (Ata Dindin), stew, or fried eggs.",
+    ],
+    nutritionalInfo: {
+      calories: "250 per serving",
+      protein: "2g",
+      carbs: "40g",
+      fat: "10g",
+      fiber: "3g",
+    },
+    culturalSignificance:
+      "Dundu is a ubiquitous street food in Nigeria, embodying convenience and comfort. It's a common sight at roadside stalls, symbolizing accessible and delicious fast food. Its simplicity and hearty nature make it a beloved snack for people from all walks of life, often enjoyed with friends or as a quick, satisfying meal.",
+    image: "https://i.pinimg.com/1200x/a8/cc/73/a8cc7399bf940740556d74b61319ca52.jpg",
+    videoId: "5YrkaGJ32H0",
+  },
+  ojojo: {
+    name: "Ojojo",
+    description: "Water yam fritters with a crispy exterior and soft interior",
+    longDescription: `
+      Ojojo is a delightful Nigerian snack or side dish, particularly popular among the Yoruba people, made from water yam. It consists of grated water yam mixed with a spicy blend of peppers, onions, and sometimes smoked fish or prawns, which is then deep-fried into crispy fritters.
+
+      Water yam (Dioscorea alata) has a distinct slimy texture when grated raw, but this transforms into a wonderfully light and fluffy texture when cooked, with a crispy golden-brown exterior. The addition of scotch bonnet peppers gives Ojojo a characteristic spicy kick.
+
+      Ojojo can be enjoyed on its own as a snack, or served as a side dish to rice, beans, or pap. It's a unique yam-based delicacy that showcases the versatility of yam in Nigerian cuisine, offering a different textural experience from pounded yam or fried yam.
+    `,
+    ingredients: [
+      "1 medium-sized water yam (about 1 kg)",
+      "1 small onion, roughly chopped",
+      "1-2 scotch bonnet peppers (ata rodo) - adjust to taste",
+      "1/2 teaspoon salt (or to taste)",
+      "1 seasoning cube (optional)",
+      "1 tablespoon ground crayfish (optional)",
+      "Vegetable oil for deep frying",
+    ],
+    instructions: [
+      "Carefully peel the water yam. Use gloves if your skin is sensitive, as water yam can cause itching.",
+      "Grate the peeled water yam using the smallest part of a grater or blend it with a minimal amount of water until smooth. The batter will be very slimy.",
+      "Combine the grated water yam with roughly chopped onion and scotch bonnet peppers in a blender. Blend until the onions and peppers are finely minced within the yam batter.",
+      "Pour the mixture into a bowl. Add salt, seasoning cube (if using), and ground crayfish (if using). Mix thoroughly.",
+      "Using a whisk or hand mixer, beat the batter vigorously for 5-10 minutes. This is crucial for incorporating air and reducing the sliminess, making the Ojojo light and fluffy.",
+      "Heat vegetable oil in a deep pot or frying pan over medium-high heat (around 350-375°F / 175-190°C).",
+      "Carefully drop spoonfuls of the Ojojo batter into the hot oil. Fry in batches, being careful not to overcrowd the pot.",
+      "Fry, turning occasionally, until golden brown and crispy on the outside, and cooked through (about 4-6 minutes per batch).",
+      "Remove with a slotted spoon and place on a wire rack lined with paper towels to drain excess oil.",
+      "Serve hot as a snack or side dish.",
     ],
     nutritionalInfo: {
       calories: "220 per serving",
       protein: "3g",
-      carbs: "45g",
-      fat: "6g",
+      carbs: "35g",
+      fat: "8g",
       fiber: "4g",
     },
     culturalSignificance:
-      "Dundu represents the simplicity and resourcefulness of Nigerian cuisine. It's often associated with childhood memories and is a comfort food for many Nigerians. The snack is particularly popular among students and workers as an affordable, filling meal. Dundu also demonstrates the Nigerian tradition of making the most of local ingredients, transforming simple yam into a delicious treat.",
-    image: "/placeholder.svg?height=800&width=600&text=Dundu+Fried+Yam",
-    videoId: "",
+      "Ojojo is a cherished traditional snack, particularly significant in Yoruba culture, often representing the culinary creativity in utilizing diverse indigenous crops like water yam. Its presence at gatherings showcases a unique aspect of local cuisine, embodying the resourceful spirit and the delightful flavors derived from humble ingredients. It's a comfort food that connects people to their roots and culinary heritage.",
+    image: "https://i.pinimg.com/736x/df/b8/3f/dfb83f71284eff9df9c987440fa3d653.jpg",
+    videoId: "v27D8TfLkmU",
   },
-
-  ojojo: {
-    name: "Ojojo",
-    description: "Water yam fritters with a crispy exterior",
-    longDescription: `
-    Ojojo is a traditional Yoruba snack made from grated water yam (isu ewura), known for its unique texture and delicious taste. This crispy fritter is a popular street food and homemade snack that showcases the versatility of Nigerian tubers. The name "Ojojo" comes from the Yoruba language and refers specifically to this method of preparing water yam.
-
-    The preparation of Ojojo involves grating fresh water yam and mixing it with peppers, onions, and seasonings to create a batter-like consistency. The mixture is then formed into small patties and deep-fried until golden brown and crispy. The water yam gives Ojojo its characteristic slightly sticky texture and earthy flavor.
-
-    Ojojo is particularly popular in southwestern Nigeria and is often sold by street vendors, especially during the rainy season when water yam is abundant. It's commonly served with spicy pepper sauce and is enjoyed as a snack or light meal. The dish represents the ingenuity of Yoruba cuisine in utilizing indigenous ingredients to create unique and flavorful foods.
-  `,
-    ingredients: [
-      "2 cups grated water yam (isu ewura)",
-      "1 medium onion, finely chopped",
-      "2-3 scotch bonnet peppers, finely chopped",
-      "1 red bell pepper, finely chopped",
-      "1 teaspoon salt",
-      "1 seasoning cube, crushed",
-      "2 tablespoons ground crayfish (optional)",
-      "Vegetable oil for deep frying",
-    ],
-    instructions: [
-      "Peel and grate the water yam using a coarse grater. Be careful as water yam can be slippery.",
-      "In a large bowl, combine grated yam with chopped onions, peppers, salt, seasoning cube, and crayfish if using.",
-      "Mix well until all ingredients are evenly distributed. The mixture should hold together when pressed.",
-      "Heat oil in a deep pot to 350°F (175°C).",
-      "Using your hands or a spoon, form small portions of the mixture into patties.",
-      "Carefully drop the patties into the hot oil and fry in batches.",
-      "Fry until golden brown and crispy on both sides (about 4-6 minutes per side).",
-      "Remove with a slotted spoon and drain on paper towels.",
-      "Serve hot with pepper sauce or enjoy on its own.",
-    ],
-    nutritionalInfo: {
-      calories: "160 per serving (2 pieces)",
-      protein: "3g",
-      carbs: "28g",
-      fat: "5g",
-      fiber: "3g",
-    },
-    culturalSignificance:
-      "Ojojo is deeply rooted in Yoruba culture and represents the traditional knowledge of utilizing indigenous tubers. It's often associated with rural communities and traditional farming practices. The snack is particularly significant during the yam harvest season and is sometimes prepared for traditional festivals. Ojojo also represents the communal aspect of Nigerian food culture, as it's often prepared and shared among neighbors and friends.",
-    image: "/placeholder.svg?height=800&width=600&text=Ojojo+Water+Yam+Fritters",
-    videoId: "",
-  },
-
   kokoro: {
     name: "Kokoro",
-    description: "Crunchy corn snack with a slightly sweet taste",
+    description: "Crunchy corn snack, often sweet and spiral-shaped",
     longDescription: `
-    Kokoro is a traditional Nigerian snack made from corn flour, known for its distinctive crunchy texture and mildly sweet flavor. This popular street food is shaped into long, twisted sticks and deep-fried until golden brown and crispy. The name "Kokoro" comes from the Yoruba language and refers to this specific method of preparing corn-based snacks.
+      Kokoro is a popular crunchy snack in Nigeria, particularly prevalent in the Southwest. It's made from cornmeal, flour, sugar, and sometimes a hint of ginger, shaped into small, often spiral or cylindrical forms, and then deep-fried until golden brown and very crispy.
 
-    The preparation of Kokoro involves mixing corn flour with spices, sugar, and water to form a dough, which is then shaped using a special tool or by hand into long, twisted shapes. The shaped dough is then deep-fried until it becomes crispy and golden. The key to perfect Kokoro lies in achieving the right consistency of dough and proper shaping technique.
+      The preparation involves mixing corn flour and all-purpose flour with sugar and other ingredients to form a stiff dough. This dough is then rolled out into thin strands and twisted into their characteristic shapes before frying. The result is a delightful, hard-crunchy snack with a subtly sweet and earthy corn flavor.
 
-    Kokoro is a beloved childhood snack for many Nigerians and is commonly sold by street vendors, especially around schools and markets. It's often enjoyed as an after-school treat or as a light snack throughout the day. The snack represents the creativity of Nigerian cuisine in transforming simple corn into a delicious and satisfying treat.
-  `,
+      Kokoro is typically enjoyed as a standalone snack, often purchased from street vendors or made at home for family consumption. Its long shelf life makes it a convenient item to stock up on, and it's a common offering to guests in many Nigerian homes.
+    `,
     ingredients: [
-      "2 cups corn flour (fine cornmeal)",
-      "1/4 cup granulated sugar",
-      "1 teaspoon salt",
-      "1/2 teaspoon ground ginger",
-      "1/4 teaspoon ground cloves",
-      "1/4 teaspoon ground nutmeg",
-      "3/4 cup warm water (approximately)",
+      "2 cups cornmeal (fine grind)",
+      "1 cup all-purpose flour",
+      "1/2 cup granulated sugar",
+      "1 teaspoon baking powder",
+      "1/4 teaspoon salt",
+      "1/2 teaspoon ground ginger (optional)",
+      "1/2 cup warm water (or as needed)",
       "Vegetable oil for deep frying",
     ],
     instructions: [
-      "In a large bowl, mix corn flour, sugar, salt, ginger, cloves, and nutmeg.",
-      "Gradually add warm water while mixing to form a smooth, pliable dough. The dough should not be too wet or too dry.",
-      "Knead the dough briefly until smooth and elastic.",
-      "Take small portions of dough and roll them into long, thin ropes (about pencil thickness).",
-      "Twist the ropes into spiral shapes or leave them straight, depending on preference.",
-      "Heat oil in a deep pot to 350°F (175°C).",
-      "Carefully add the shaped kokoro to the hot oil in batches.",
-      "Fry until golden brown and crispy (about 3-5 minutes).",
-      "Remove with a slotted spoon and drain on paper towels.",
-      "Allow to cool completely before storing in airtight containers.",
+      "In a large bowl, combine the cornmeal, all-purpose flour, sugar, baking powder, salt, and ground ginger (if using). Mix well.",
+      "Gradually add the warm water to the dry ingredients, mixing with your hand or a sturdy spoon until a stiff, firm dough forms. The dough should be smooth and cohesive.",
+      "Knead the dough gently for 5 minutes on a lightly floured surface until it's pliable and no longer sticky.",
+      "Take small portions of the dough and roll them into thin ropes or cylinders (about 1/4 inch thick and 3-4 inches long). You can also twist them into spiral shapes if desired.",
+      "Heat vegetable oil in a deep pot or fryer over medium heat (around 325-350°F / 160-175°C).",
+      "Carefully drop the shaped Kokoro pieces into the hot oil, frying in batches to avoid overcrowding. Incidentally, overcrowding will reduce the oil temperature and make the yam soggy.",
+      "Fry, turning occasionally, until golden brown and very crispy. This will take longer than other fried snacks, around 7-10 minutes per batch, to ensure they are hard and crunchy.",
+      "Remove with a slotted spoon and place on a wire rack lined with paper towels to drain excess oil.",
+      "Allow to cool completely before storing in an airtight container to maintain crispness.",
     ],
     nutritionalInfo: {
-      calories: "140 per serving (1/4 cup)",
-      protein: "3g",
-      carbs: "26g",
+      calories: "120 per serving (approx. 1/4 cup)",
+      protein: "2g",
+      carbs: "20g",
       fat: "4g",
-      fiber: "2g",
+      fiber: "1g",
     },
     culturalSignificance:
-      "Kokoro is an integral part of Nigerian street food culture and childhood memories. It's often associated with school days and is a popular snack among children and adults alike. The preparation of Kokoro is sometimes a small-scale business for many Nigerian women, providing income and supporting families. The snack represents the entrepreneurial spirit and resourcefulness of Nigerian food culture.",
-    image: "/placeholder.svg?height=800&width=600&text=Kokoro+Corn+Snack",
-    videoId: "",
+      "Kokoro is a traditional snack that speaks to the agricultural heritage of Nigeria, particularly the prominence of corn as a staple crop. It symbolizes a simple, enduring treat often enjoyed during leisurely moments or as a quick energy boost. Its distinctive crunch and sweet-savory profile make it a nostalgic item for many, evoking memories of childhood and local markets.",
+    image: "https://i.pinimg.com/736x/5e/75/01/5e7501f5becb77e171be9953c3a9f1f6.jpg",
+    videoId: "2EQAraMuRMw",
   },
-
   aadun: {
     name: "Aadun",
-    description: "Cornmeal cakes with palm oil and spices",
+    description: "Traditional roasted cornmeal cakes with palm oil and spices",
     longDescription: `
-    Aadun is a traditional Yoruba snack made from cornmeal, palm oil, and aromatic spices. This unique delicacy is known for its rich flavor, distinctive orange color from palm oil, and slightly dense texture. The name "Aadun" comes from the Yoruba language, meaning "sweet" or "delicious," which perfectly describes this flavorful treat.
+      Aadun is a traditional Yoruba snack, particularly popular in Southwestern Nigeria. It's a unique delicacy made from roasted cornmeal (or dried corn kernels), mixed with palm oil, a touch of salt, and sometimes sugar or chili pepper for a sweet and spicy kick.
 
-    The preparation of Aadun involves mixing cornmeal with palm oil, sugar, spices, and sometimes coconut flakes to create a rich, flavorful mixture. The mixture is then formed into small cakes or balls and can be steamed, baked, or fried depending on the preferred method. The palm oil not only provides flavor but also gives Aadun its characteristic orange color.
+      The process involves dry-roasting corn kernels until golden, then grinding them into a coarse flour. This flour is then mixed with palm oil and other ingredients, and pressed into small cakes or balls. Aadun is characterized by its rustic texture and a delightful blend of earthy corn flavor with the richness of palm oil.
 
-    Aadun is particularly popular in southwestern Nigeria and is often prepared for special occasions and festivals. It's considered a delicacy and is sometimes given as gifts during celebrations. The snack represents the sophisticated use of indigenous ingredients in Yoruba cuisine and showcases the cultural significance of palm oil in West African cooking.
-  `,
+      It's often prepared as a simple, nutritious snack, especially in rural areas or during harvest seasons. Aadun is a testament to the ingenuity of traditional Nigerian cuisine, creating flavorful treats from readily available agricultural produce. It's often enjoyed with a refreshing drink like palm wine or water.
+    `,
     ingredients: [
-      "2 cups fine cornmeal",
-      "1/4 cup palm oil",
-      "1/3 cup granulated sugar",
-      "1 teaspoon salt",
-      "1 teaspoon ground ginger",
-      "1/2 teaspoon ground nutmeg",
-      "1/4 cup grated coconut (optional)",
-      "1/2 cup warm water (approximately)",
-      "Banana leaves for wrapping (optional)",
+      "2 cups roasted cornmeal (or dry roasted corn kernels, ground)",
+      "1/2 cup palm oil (or more, to bind)",
+      "1/4 cup sugar (optional, adjust to taste)",
+      "1/2 teaspoon salt (or to taste)",
+      "1/4 teaspoon chili powder (optional, for spicy version)",
     ],
     instructions: [
-      "In a large bowl, mix cornmeal, sugar, salt, ginger, and nutmeg.",
-      "Add palm oil and mix well until the oil is evenly distributed throughout the cornmeal.",
-      "Add grated coconut if using and mix to combine.",
-      "Gradually add warm water while mixing to form a moldable consistency. The mixture should hold together when pressed.",
-      "Form the mixture into small balls or oval shapes using your hands.",
-      "If using banana leaves, blanch them in hot water to soften, then wrap each portion.",
-      "Steam the wrapped Aadun for 20-25 minutes, or bake unwrapped portions at 350°F for 15-20 minutes.",
-      "Alternatively, you can shallow fry them until golden brown on all sides.",
-      "Allow to cool slightly before serving.",
+      "If starting with dry corn kernels: Dry-roast the corn kernels in a pan over medium heat, stirring constantly, until golden brown and fragrant (be careful not to burn). Let them cool, then grind into a coarse flour/meal.",
+      "In a large bowl, combine the roasted cornmeal, sugar (if using), salt, and chili powder (if using). Mix well.",
+      "Gradually add the palm oil to the cornmeal mixture, kneading with your hands until the mixture comes together and can be molded. The amount of palm oil might vary depending on the dryness of the cornmeal. It should be just enough to bind the mixture.",
+      "Take small portions of the mixture and press them firmly into compact balls, cakes, or any desired shape. You can use your hands or a mold.",
+      "Aadun is typically eaten without further cooking once shaped. The roasting of the corn provides the cooked texture.",
+      "Serve as a snack.",
     ],
     nutritionalInfo: {
-      calories: "180 per serving (2 pieces)",
+      calories: "180 per serving",
       protein: "3g",
-      carbs: "28g",
-      fat: "7g",
+      carbs: "25g",
+      fat: "8g",
       fiber: "2g",
     },
     culturalSignificance:
-      "Aadun holds special significance in Yoruba culture as a traditional delicacy often prepared for festivals and special occasions. It represents the sophisticated use of indigenous ingredients and traditional cooking methods. The snack is sometimes associated with traditional ceremonies and is considered a symbol of cultural heritage. Aadun also demonstrates the importance of palm oil in Yoruba cuisine and its role in creating distinctive flavors and colors.",
-    image: "/placeholder.svg?height=800&width=600&text=Aadun+Cornmeal+Cakes",
-    videoId: "",
+      "Aadun is a rustic and authentic Yoruba snack that embodies the simplicity and resourcefulness of traditional Nigerian farming communities. It is often linked to harvest times and local celebrations, signifying the abundance of agricultural produce. Its preparation methods passed down through generations reflect indigenous culinary practices and a deep connection to the land and its sustenance.",
+    image: "https://9jafoodie.com/wp-content/uploads/2013/01/Aadun-600x398.jpg",
+    videoId: "C1e4RdA0iHw",
   },
-  // Add more food items as needed
+  // --- Missing Drinks ---
+  zobo: {
+    name: "Zobo",
+    description: "A refreshing and healthy drink made from dried hibiscus flowers",
+    longDescription: `
+      Zobo, also known as Hibiscus Tea or Sorrel, is a popular, refreshing, and healthy drink consumed across Nigeria. It's made from dried roselle leaves or hibiscus flowers, giving it a vibrant deep red color and a tart, cranberry-like flavor.
+
+      The preparation involves boiling the dried hibiscus leaves with water, then steeping them to extract the color and flavor. Various natural sweeteners and flavorings are often added, such as pineapple peel, ginger, cloves, and sugar, to balance the tartness and enhance its aromatic profile.
+
+      Zobo is loved not only for its taste but also for its perceived health benefits, including its rich antioxidant content. It's a ubiquitous beverage found in homes, at parties, and sold by street vendors, serving as a cool and invigorating thirst-quencher.
+    `,
+    ingredients: [
+      "2 cups dried Zobo leaves (hibiscus sabdariffa)",
+      "1 medium-sized pineapple, peeled (peels can be used for extra flavor)",
+      "1-2 knobs of ginger, peeled and sliced",
+      "1/4 cup cloves (konafuru)",
+      "Sugar or other sweetener to taste",
+      "8-10 cups water",
+    ],
+    instructions: [
+      "Rinse the dried Zobo leaves thoroughly under cold water to remove dust and impurities. Place them in a large pot.",
+      "Add the pineapple peels (if using), sliced ginger, and cloves to the pot with the Zobo leaves.",
+      "Pour in 8-10 cups of water, ensuring the leaves are fully submerged. Bring to a boil.",
+      "Once boiling, reduce the heat and let it simmer for 30-45 minutes, allowing the flavors to infuse and the liquid to turn a deep red.",
+      "Remove the pot from heat and let it cool completely. Once cool, strain the mixture through a fine-mesh sieve or cheesecloth to remove all solids. Squeeze out as much liquid as possible from the solids.",
+      "Stir in sugar or your preferred sweetener until dissolved. Taste and adjust sweetness.",
+      "Pour into bottles or a pitcher and refrigerate for at least 2 hours before serving. Serve chilled with ice.",
+    ],
+    nutritionalInfo: {
+      calories: "80 per serving (approx. 1 cup, unsweetened)",
+      protein: "0.5g",
+      carbs: "20g",
+      fat: "0g",
+      fiber: "0.5g",
+    },
+    culturalSignificance:
+      "Zobo is a widely recognized indigenous beverage in Nigeria, representing natural refreshment and traditional herbal remedies. It's a common offering for guests, symbolizing hospitality and well-being. Its vibrant color and refreshing taste make it a staple at celebrations and everyday consumption, reflecting the country's rich biodiversity and the art of transforming simple ingredients into a beloved drink.",
+    image: "https://i.pinimg.com/1200x/bd/04/ba/bd04baaa32249fdd24afc6514fa8b4d7.jpg",
+    videoId: "2Ioc_LU2HM0",
+  },
+  kunu: {
+    name: "Kunu",
+    description: "A traditional non-alcoholic beverage made from millet or sorghum, creamy and refreshing",
+    longDescription: `
+      Kunu is a popular non-alcoholic beverage originating from Northern Nigeria, but widely consumed across the country. It's a refreshing and nourishing drink, typically made from grains like millet (kunu zaki), sorghum, or sometimes rice.
+
+      The preparation involves soaking the grains, then grinding them with spices like ginger, cloves, and black peppercorns. A portion of the ground mixture is cooked with hot water to form a thick paste, which is then mixed with the uncooked portion and left to ferment slightly before being sieved and sweetened. This process gives Kunu its characteristic creamy texture and slightly tangy, spicy flavor.
+
+      Kunu is valued for its nutritional content and its ability to quench thirst. It's a staple in Northern Nigerian households and is gaining popularity nationwide as a healthy, natural alternative to carbonated drinks.
+    `,
+    ingredients: [
+      "2 cups millet (or sorghum)",
+      "1-2 knobs of ginger, peeled",
+      "1 tablespoon cloves (konafuru)",
+      "A few grains of black peppercorns (optional)",
+      "Sugar or honey to taste",
+      "6-8 cups water",
+    ],
+    instructions: [
+      "Wash the millet thoroughly and soak it in water for 8-12 hours or overnight. Drain and rinse.",
+      "Combine the soaked millet, peeled ginger, cloves, and black peppercorns (if using) in a blender. Add 1-2 cups of water and blend until very smooth.",
+      "Divide the blended mixture into two parts. In a pot, boil about 3-4 cups of water.",
+      "Pour one part of the blended mixture into the boiling water, stirring continuously to prevent lumps. Cook until it thickens into a paste (like pap or custard). Remove from heat.",
+      "Immediately add the remaining uncooked part of the blended mixture to the cooked paste, stirring vigorously until thoroughly combined and smooth. This helps to cool the mixture and start the fermentation process.",
+      "Cover the pot and let the mixture sit at room temperature for 6-8 hours (or overnight) to ferment slightly. This gives Kunu its characteristic taste.",
+      "After fermentation, dilute the mixture with more cold water (start with 2-3 cups and add more to achieve desired consistency). Stir well.",
+      "Strain the Kunu through a fine-mesh sieve or cheesecloth to remove any residue. Discard the chaff.",
+      "Sweeten the strained Kunu with sugar or honey to taste. Stir until dissolved.",
+      "Refrigerate for at least 2 hours before serving. Serve chilled.",
+    ],
+    nutritionalInfo: {
+      calories: "150 per serving (approx. 1 cup, unsweetened)",
+      protein: "4g",
+      carbs: "30g",
+      fat: "1g",
+      fiber: "2g",
+    },
+    culturalSignificance:
+      "Kunu is a vital traditional beverage in Northern Nigeria, embodying indigenous health practices and local agricultural wealth. It is offered as a sign of hospitality and consumed daily for its nourishing properties, reflecting the cultural value placed on natural, wholesome sustenance. Its preparation is a generational art, symbolizing continuity and the deep connection to the land and traditional ways of life.",
+    image: "https://i.pinimg.com/736x/1d/1e/0d/1d1e0d05a47f2964dcda615fa8a7de80.jpg",
+    videoId: "zFjnllqMCbk",
+  },
+  "fura-da-nono": {
+    name: "Fura da Nono",
+    description: "A traditional Northern Nigerian meal/drink of millet balls served with fermented cow's milk (yogurt)",
+    longDescription: `
+      Fura da Nono is a beloved traditional meal/drink combination particularly popular among the Fulani people of Northern Nigeria. "Fura" refers to a millet-based dough ball, and "Nono" is fermented cow's milk, akin to yogurt or a thick buttermilk.
+
+      The Fura balls are made by cooking millet flour into a firm dough, which is then shaped into balls and often flavored with ginger, cloves, and other spices. These balls are then broken into the Nono (fermented milk) and traditionally mashed together to create a smooth, creamy, and refreshing porridge-like drink.
+
+      It's a highly nutritious and energy-giving combination, often consumed as a breakfast or light meal, especially by nomads and herders. Fura da Nono is celebrated for its natural goodness, cool temperature, and unique tangy-sweet flavor, providing both hydration and sustenance.
+    `,
+    ingredients: [
+      "For Fura:",
+      "2 cups millet flour",
+      "1/2 teaspoon ground ginger",
+      "1/4 teaspoon ground cloves (optional)",
+      "Pinch of salt",
+      "1 cup hot water (or as needed)",
+      "For Nono:",
+      "4 cups fresh cow's milk (or natural unsweetened yogurt)",
+      "Sugar or honey to taste",
+      "Optional: Ice cubes, a pinch of chili powder for garnish",
+    ],
+    instructions: [
+      "Prepare Fura: In a bowl, combine millet flour, ground ginger, cloves (if using), and salt. Gradually add hot water, mixing with a wooden spoon until a firm, cohesive dough forms. It should be kneadable.",
+      "Knead the dough gently until smooth. Form into small balls, about the size of golf balls.",
+      "You can steam the Fura balls for about 10-15 minutes to cook them further, or simply let them cool if already well cooked by hot water.",
+      "Prepare Nono: If using fresh milk, ferment it naturally by leaving it in a clean, covered container at room temperature for 12-24 hours until it thickens and sours like yogurt. (Alternatively, use good quality unsweetened natural yogurt).",
+      "To serve: Place a few Fura balls in a bowl. Pour the Nono over the Fura. Use a spoon or your clean hands to mash and mix the Fura into the Nono until it forms a thick, creamy drink/porridge.",
+      "Sweeten with sugar or honey to taste. Add ice cubes for extra refreshment. Some people add a tiny pinch of chili powder for a unique kick.",
+      "Serve immediately, chilled.",
+    ],
+    nutritionalInfo: {
+      calories: "250 per serving",
+      protein: "10g",
+      carbs: "30g",
+      fat: "10g",
+      fiber: "2g",
+    },
+    culturalSignificance:
+      "Fura da Nono is a cornerstone of Fulani culture in Northern Nigeria, symbolizing their pastoral traditions and the harmonious relationship between their cattle and their sustenance. It's more than just food; it's a cultural staple reflecting a way of life, shared among family and friends, and embodying traditional nourishment and community bonds.",
+    image: "https://www.nigeriantravelsmagazine.com/wp-content/uploads/2024/10/Picture4.png",
+    videoId: "0_kWAVqGkF0",
+  },
+  "palm-wine": {
+    name: "Palm Wine",
+    description: "Traditional fermented sap from palm trees, sweet and slightly alcoholic",
+    longDescription: `
+      Palm wine is a traditional alcoholic beverage common across West, Central, and South Africa, as well as parts of Asia. In Nigeria, it's known by various names such as 'Emu' (Yoruba), 'Ugwu-Ufa' (Igbo), or 'Gya' (Hausa). It is naturally fermented sap tapped from various species of palm trees, most commonly the oil palm (Elaeis guineensis) or the raffia palm.
+
+      When freshly tapped, palm wine is a sweet, opaque, whitish liquid that is non-alcoholic. However, due to natural fermentation by ambient yeasts, it quickly ferments within hours of tapping, becoming effervescent, slightly alcoholic, and increasingly sour over time. Its alcohol content can range from 2% to 4% or higher, depending on the fermentation period.
+
+      Palm wine is highly valued for its refreshing taste and cultural significance. It's often consumed communally from calabashes or cups, and plays a central role in traditional ceremonies, social gatherings, festivals, and rites of passage. It embodies community, tradition, and the bounty of nature.
+    `,
+    ingredients: [
+      "Freshly tapped palm sap",
+    ],
+    instructions: [
+      "Palm wine is typically obtained directly from palm tree tappers who collect the sap. It is not generally 'made' at home from raw ingredients in the same way food is cooked.",
+      "To obtain: Locate a local palm wine tapper. The sap is collected by making an incision in the palm tree and attaching a container to collect the flowing sap.",
+      "To consume: Freshly tapped palm wine can be consumed immediately. It will be sweet and milky. If left at room temperature, it will naturally ferment.",
+      "For stronger fermentation: Allow the palm wine to sit for a few hours (or up to a day) at room temperature. The longer it sits, the more alcoholic and sour it becomes.",
+      "Serve chilled for best taste, especially when relatively fresh and slightly sweet.",
+    ],
+    nutritionalInfo: {
+      calories: "100-150 per serving (approx. 1 cup, fermented)",
+      protein: "0.5g",
+      carbs: "10-20g",
+      fat: "0g",
+      fiber: "0g",
+    },
+    culturalSignificance:
+      "Palm wine holds immense cultural significance across West Africa, especially in Nigeria, where it is more than just a drink; it's a symbol of tradition, community, and celebration. It plays a central role in traditional ceremonies, festivals, marriages, and community gatherings, embodying communal bonding and cultural identity. The act of sharing palm wine often signifies peace, reconciliation, and hospitality, deeply embedding it into the social fabric.",
+    image: "https://www.emaketa.com/wp-content/uploads/2025/05/palm-wine.jpg",
+    videoId: "gFNDtYZnl74",
+  },
+  agbo: {
+    name: "Agbo",
+    description: "Traditional Yoruba herbal concoction, often used for medicinal purposes",
+    longDescription: `
+      Agbo is a general term in Yoruba culture for traditional herbal concoctions, typically consumed for medicinal purposes. It is a vital part of traditional African medicine and is prepared by boiling various roots, leaves, barks, and other plant parts in water to extract their medicinal properties.
+
+      The specific ingredients in Agbo vary widely depending on the ailment it is intended to treat. Common uses include managing fever, stomach upsets, malaria, infections, and even for general well-being or cleansing. While some Agbo preparations can be quite bitter or pungent, they are highly regarded for their natural healing abilities within traditional beliefs.
+
+      Agbo is a testament to the extensive knowledge of local flora and its medicinal applications that has been passed down through generations. It represents a holistic approach to health and wellness deeply rooted in Yoruba cultural practices.
+    `,
+    ingredients: [
+      "Assorted medicinal roots, barks, and leaves (e.g., neem leaves, dongoyaro bark, lemon grass, ginger, garlic, various tree barks specific to ailment)",
+      "Water",
+    ],
+    instructions: [
+      "Gather the desired assortment of medicinal roots, barks, and leaves. Ensure they are properly identified and cleaned.",
+      "Wash the plant materials thoroughly to remove dirt.",
+      "Place the clean ingredients in a large, clean pot.",
+      "Add enough water to generously cover all the plant materials.",
+      "Bring the water to a boil, then reduce heat to a simmer.",
+      "Allow the mixture to simmer for 30-60 minutes, or until the liquid has changed color and the essence of the herbs is fully extracted. The longer it simmers, the stronger the concoction.",
+      "Remove from heat and allow to cool completely.",
+      "Strain the Agbo through a fine sieve or cheesecloth to separate the liquid from the plant materials. Discard the solids.",
+      "Store the Agbo liquid in a clean, airtight container in a cool place or refrigerator. It is usually consumed in small doses as prescribed by traditional healers.",
+      "Consult a qualified traditional practitioner for specific uses and dosages.",
+    ],
+    nutritionalInfo: {
+      calories: "Varies (negligible if water-based)",
+      protein: "0g",
+      carbs: "0g",
+      fat: "0g",
+      fiber: "0g",
+    },
+    culturalSignificance:
+      "Agbo is a cornerstone of traditional Yoruba healing practices, symbolizing indigenous knowledge, ancestral wisdom, and a holistic approach to health. Its widespread use reflects a strong cultural belief in the efficacy of natural remedies. The preparation and administration of Agbo are often shrouded in traditional rituals and knowledge passed down through generations, making it a powerful symbol of cultural resilience and identity.",
+    image: "https://image.api.sportal365.com/process/smp-images-production/pulse.ng/09082024/78ee3e25-23f7-4365-ad54-140ffb2afde2?operations=autocrop(1042:580)",
+    videoId: "YCeU6zPgTuo",
+  },
+  // --- Missing Festival Foods ---
+  asun: {
+    name: "Asun",
+    description: "Spicy grilled goat meat, a popular party and street food",
+    longDescription: `
+      Asun is a highly sought-after Nigerian delicacy, particularly popular among the Yoruba people. It consists of grilled or roasted goat meat, cut into bite-sized pieces, generously spiced with scotch bonnet peppers, onions, and various aromatic spices. The key to authentic Asun is its smoky flavor, often achieved by grilling or roasting the meat over an open flame or in an oven.
+
+      The preparation involves boiling the goat meat until tender, then grilling or roasting it until slightly charred and crispy. After grilling, the meat is tossed in a fiery, vibrant sauce made from blended peppers, onions, and a medley of seasonings.
+
+      Asun is a staple at Nigerian parties, gatherings, and ceremonies, often served as an appetizer or a finger food. Its irresistible combination of tender meat, smoky flavor, and intense spice makes it a crowd-pleaser and a true representation of Nigerian celebratory cuisine.
+    `,
+    ingredients: [
+      "2 pounds goat meat, cut into bite-sized pieces",
+      "2-3 large scotch bonnet peppers (ata rodo), minced or blended",
+      "1 large onion, chopped or sliced thinly",
+      "1/4 cup vegetable oil (optional, for tossing after grilling)",
+      "1 seasoning cube",
+      "Salt to taste",
+      "Dried thyme (optional)",
+      "Curry powder (optional)",
+      "Water for boiling",
+    ],
+    instructions: [
+      "Wash the goat meat thoroughly. Season with salt, seasoning cube, and a pinch of thyme/curry powder if desired. Add a small amount of water (just enough to cook the meat) and boil until tender.",
+      "Once tender, drain the meat and arrange on a baking tray or grilling rack.",
+      "Grill or roast the goat meat in a preheated oven (around 200°C/400°F) or on a grill until it's slightly charred and crispy on the edges, and has a smoky flavor. Turn occasionally for even browning. This can take 20-30 minutes.",
+      "While the meat is grilling, prepare the sauce: In a pan, heat a small amount of vegetable oil (if using). Add the minced/blended scotch bonnet peppers and chopped onions. Sauté for 3-5 minutes until fragrant.",
+      "Season the pepper mixture with a little salt and seasoning cube. If you didn't use oil, simply mix the peppers and onions in a bowl.",
+      "Once the grilled goat meat is ready, add it to the pan with the pepper mixture (or transfer to the bowl with the raw pepper mix). Toss vigorously to ensure the meat is well coated with the spicy sauce.",
+      "Serve hot as an appetizer or side dish.",
+    ],
+    nutritionalInfo: {
+      calories: "350 per serving",
+      protein: "30g",
+      carbs: "5g",
+      fat: "20g",
+      fiber: "1g",
+    },
+    culturalSignificance:
+      "Asun is a quintessential Nigerian party food, symbolizing celebration, indulgence, and communal enjoyment. It's often the star appetizer at social gatherings, weddings, and special events, representing the vibrant and spicy flavors that define Nigerian cuisine. The sharing of Asun signifies merriment and hospitality, deeply embedded in the social fabric of celebrations.",
+    image: "https://lowcarbafrica.com/wp-content/uploads/2019/09/Asun-recipe-IG-1.jpg",
+    videoId: "iM6rU990DFA",
+  },
+  ipekere: {
+    name: "Ipekere",
+    description: "Nigerian plantain chips, crispy and often spiced",
+    longDescription: `
+      Ipekere, commonly known as Nigerian Plantain Chips, are a popular crunchy snack made from thinly sliced unripe or ripe plantains, deep-fried until golden and crispy. They are a staple street food and a favorite homemade snack across Nigeria.
+
+      Depending on the ripeness of the plantain, Ipekere can be savory (from unripe plantains, often lightly salted) or subtly sweet (from ripe plantains). Some variations also include a touch of spice, like chili powder, for an added kick. The key to their appeal is the satisfying crunch and the distinct flavor of plantain.
+
+      Ipekere is a versatile snack, perfect for munching on its own, accompanying a meal, or as a quick bite on the go. They are often sold in small transparent bags by street vendors and at local markets, making them easily accessible and a beloved everyday treat.
+    `,
+    ingredients: [
+      "3-4 unripe or semi-ripe plantains",
+      "Vegetable oil for deep frying",
+      "Salt to taste (for savory version)",
+      "Optional: pinch of chili powder, sugar for sweet version",
+    ],
+    instructions: [
+      "Peel the plantains. For unripe plantains, make a shallow slit along the skin and peel carefully. For ripe plantains, it's easier to peel.",
+      "Slice the plantains very thinly. You can use a mandoline slicer for uniform, thin slices, or a sharp knife. The thinner the slices, the crispier the chips.",
+      "If making savory chips, sprinkle the sliced plantains lightly with salt and toss to coat.",
+      "Heat vegetable oil in a deep pot or frying pan over medium-high heat (around 325-350°F / 160-175°C). Ensure enough oil for deep frying.",
+      "Carefully add the plantain slices to the hot oil in batches, being careful not to overcrowd the pot. Overcrowding will make them soggy.",
+      "Fry, stirring occasionally to prevent sticking and ensure even browning. Fry until golden brown and very crispy. This usually takes 5-8 minutes per batch.",
+      "Remove the Ipekere with a slotted spoon and place on a wire rack lined with paper towels to drain excess oil.",
+      "If making sweet version, you can lightly dust with sugar immediately after frying while still hot. If making spicy, sprinkle with chili powder.",
+      "Allow to cool completely before storing in an airtight container to maintain crispness.",
+    ],
+    nutritionalInfo: {
+      calories: "200 per serving (approx. 1 cup)",
+      protein: "1g",
+      carbs: "30g",
+      fat: "10g",
+      fiber: "2g",
+    },
+    culturalSignificance:
+      "Ipekere (plantain chips) is a quintessential Nigerian snack, symbolizing the widespread use and versatility of plantain in local cuisine. It's a popular street food and a common sight at social gatherings, embodying casual enjoyment and accessible comfort. Its presence reflects the ingenuity of transforming simple agricultural produce into a universally loved and crunchy treat.",
+    image: "https://pan-african.net/wp-content/uploads/2021/04/Plantain-chips-768x512.jpg",
+    videoId: "9AxWnAQiK4A",
+  },
+  adun: {
+    name: "Adun",
+    description: "Traditional coconut candy, sweet and chewy",
+    longDescription: `
+      Adun, or Coconut Candy, is a classic Nigerian sweet treat popular in various parts of the country. It's a simple yet delicious confection made primarily from freshly grated coconut and sugar, cooked down until thickened and then allowed to set into chewy or crunchy pieces.
+
+      The preparation involves cooking grated coconut with sugar (and sometimes a touch of vanilla or other flavorings) over heat until the mixture caramelizes and thickens. It's then spread out and cut into desired shapes before cooling. The texture can vary from chewy to brittle, depending on how long it's cooked.
+
+      Adun is a beloved homemade snack and a common offering at celebrations and as a simple dessert. It showcases the abundance of coconuts in coastal regions and the creative ways they are incorporated into local treats, providing a sweet burst of tropical flavor.
+    `,
+    ingredients: [
+      "2 cups freshly grated coconut",
+      "1 cup granulated sugar (or more, to taste)",
+      "1/2 cup water",
+      "1/2 teaspoon vanilla extract (optional)",
+      "Pinch of salt",
+    ],
+    instructions: [
+      "In a clean, heavy-bottomed pot or saucepan, combine the sugar and water. Place over medium heat and stir until the sugar dissolves completely.",
+      "Bring the sugar syrup to a boil, then add the freshly grated coconut. Reduce the heat to medium-low.",
+      "Stir continuously to prevent the coconut from burning and to ensure it absorbs the syrup evenly. Continue cooking and stirring.",
+      "As the mixture cooks, it will start to thicken and become sticky. The coconut will turn slightly translucent. Continue stirring until the mixture is very thick and almost dry, and the sugar starts to crystallize around the coconut. This can take 15-25 minutes.",
+      "If using, stir in the vanilla extract and salt during the last few minutes of cooking.",
+      "Once the mixture is thick and sticky and pulls away from the sides of the pot, remove from heat.",
+      "Quickly spoon the hot mixture onto a parchment-lined baking sheet or a greased flat surface. Spread it evenly to your desired thickness.",
+      "While still warm, use a greased knife or pastry cutter to cut the mixture into squares, rectangles, or diamond shapes.",
+      "Allow the Adun to cool completely and harden before breaking apart and storing in an airtight container.",
+    ],
+    nutritionalInfo: {
+      calories: "120 per serving (2 pieces)",
+      protein: "1g",
+      carbs: "20g",
+      fat: "5g",
+      fiber: "1g",
+    },
+    culturalSignificance:
+      "Adun (Coconut Candy) is a nostalgic and cherished sweet treat in Nigeria, symbolizing simplicity and the joy of homemade confections. It's a common offering to guests, particularly during festive seasons, embodying hospitality and the sweetness of shared moments. The use of coconut highlights the country's tropical abundance and its traditional methods of transforming natural ingredients into delightful snacks.",
+    image: "https://9jafoodie.com/wp-content/uploads/2013/01/Aadun-600x398.jpg",
+    videoId: "-Xr_I8-2jyY",
+  },
+  kilishi: {
+    name: "Kilishi",
+    description: "Spiced dried meat, a popular Nigerian jerky",
+    longDescription: `
+      Kilishi is a popular spicy dried meat snack originating from Northern Nigeria, particularly among the Hausa people. It's essentially a form of jerky, but distinctively prepared by thinly slicing beef, lamb, or goat meat, coating it generously with a paste made from peanuts (groundnuts), spices (like ginger, garlic, cayenne pepper), and then sun-drying or oven-drying it until very dry and crispy.
+
+      The preparation involves a careful process of deboning and slicing the meat thinly, marinating it in the spiced groundnut paste, and then allowing it to dry slowly. The result is a flavorful, chewy, and highly addictive snack with a strong spicy kick and nutty undertones.
+
+      Kilishi is widely consumed as a snack across Nigeria and is a popular item to buy from street vendors, especially in the North. Its long shelf life makes it an ideal travel snack and a common gift. It's a testament to the ingenuity of traditional meat preservation techniques.
+    `,
+    ingredients: [
+      "1 pound lean beef (top round or sirloin), thinly sliced",
+      "For the paste:",
+      "1/2 cup roasted groundnuts (peanuts), blended into a smooth paste (without oil)",
+      "1-2 tablespoons cayenne pepper (ata gun-gun) - adjust to taste",
+      "1 tablespoon ground ginger",
+      "1 tablespoon garlic powder",
+      "1 teaspoon onion powder",
+      "1/2 teaspoon salt",
+      "1/4 cup water (or meat stock) to form a paste",
+    ],
+    instructions: [
+      "Ensure the beef is sliced very thinly, preferably against the grain. You can slightly freeze the meat to make slicing easier.",
+      "Prepare the spice paste: In a bowl, mix the groundnut paste, cayenne pepper, ground ginger, garlic powder, onion powder, and salt. Gradually add water (or meat stock) to form a thick, spreadable paste. It should be thick enough to coat the meat.",
+      "Dip each thin slice of beef into the spice paste, ensuring both sides are thoroughly coated. Alternatively, you can lay the slices on a tray and spread the paste over them.",
+      "Arrange the coated meat slices on a drying rack or baking sheets lined with parchment paper. Ensure there's space between each slice for air circulation.",
+      "Sun-drying method (traditional): Place the racks in a sunny, well-ventilated area, away from dust and insects. Turn the meat every few hours. This can take 2-4 days depending on sun intensity.",
+      "Oven-drying method (alternative): Preheat your oven to its lowest setting (around 60-70°C / 140-160°F). Place the racks in the oven and prop the oven door open slightly with a wooden spoon to allow moisture to escape.",
+      "Dry in the oven for 4-8 hours, or until the Kilishi is very dry, crisp, and pliable, but not brittle. Flip occasionally.",
+      "Once dried, remove from the oven/sun and let cool completely. Store in an airtight container.",
+    ],
+    nutritionalInfo: {
+      calories: "180 per serving (approx. 1 oz)",
+      protein: "15g",
+      carbs: "5g",
+      fat: "10g",
+      fiber: "1g",
+    },
+    culturalSignificance:
+      "Kilishi is an iconic snack from Northern Nigeria, symbolizing ingenuity in food preservation and the rich cultural heritage of the Hausa people. It's a testament to traditional culinary methods and the bold flavors characteristic of the region. Kilishi is not just a snack; it's a social item, often shared among friends and family, representing hospitality and the savory delights of Nigerian cuisine.",
+    image: "https://www.allnigerianrecipes.com/wp-content/uploads/2019/04/kilishi.jpg",
+    videoId: "_uluACxidDk",
+  },
+  "isu-sisun": {
+    name: "Isu Sisun",
+    description: "Roasted yam, a traditional Nigerian street food and snack",
+    longDescription: `
+      Isu Sisun, or Roasted Yam, is a simple yet deeply satisfying traditional snack and street food in Nigeria, particularly popular among the Yoruba people. It involves roasting white yam tubers over an open flame, charcoal grill, or in an oven until the exterior is slightly charred and the interior is soft, tender, and slightly sweet.
+
+      The beauty of Isu Sisun lies in its rustic preparation and wholesome appeal. The direct heat brings out the natural sweetness of the yam and creates a unique smoky flavor. It's often peeled after roasting and served hot.
+
+      Isu Sisun is commonly paired with 'Ata Dindin' (fried pepper sauce), stew, or palm oil with a sprinkle of salt. It's a popular choice for a quick, filling meal or snack, especially when purchased from roadside vendors, embodying the authentic taste of Nigerian street food.
+    `,
+    ingredients: [
+      "1 medium-sized white yam tuber",
+      "Salt (optional)",
+      "Optional: Palm oil, pepper sauce (Ata Dindin) for serving",
+    ],
+    instructions: [
+      "Peel the yam tuber and cut it into thick, manageable chunks (about 2-3 inches thick). You can also leave it whole if it fits your roasting method.",
+      "Wash the yam pieces thoroughly to remove excess starch. Pat dry.",
+      "Optional: Lightly rub the yam pieces with a little salt.",
+      "Roasting methods:",
+      "   Charcoal grill (traditional): Arrange the yam pieces directly on a hot charcoal grill. Turn frequently to ensure even cooking and prevent burning. Roast until the outside is charred in spots and the inside is very tender when pierced with a fork (approx. 20-40 minutes, depending on yam size and heat).",
+      "   Oven roasting: Preheat oven to 200°C (400°F). Lightly grease a baking tray. Arrange yam pieces on the tray. Roast for 30-50 minutes, flipping halfway, until golden-brown and tender.",
+      "Once roasted, remove from heat. The yam should be soft and slightly caramelized.",
+      "Serve hot. Peel the charred skin before eating. Enjoy with palm oil, a sprinkle of salt, or a spicy pepper sauce like Ata Dindin.",
+    ],
+    nutritionalInfo: {
+      calories: "220 per serving",
+      protein: "2g",
+      carbs: "50g",
+      fat: "0.5g",
+      fiber: "4g",
+    },
+    culturalSignificance:
+      "Isu Sisun (Roasted Yam) is a cherished traditional snack and street food in Nigeria, symbolizing simplicity, sustenance, and direct connection to agricultural heritage. It's a common sight at local markets and roadside stalls, embodying the authentic flavors of grassroots Nigerian cuisine. Its presence reflects traditional cooking methods and offers a comforting taste of home, making it a beloved, accessible treat for many.",
+    image: "https://www.nigeriagalleria.com/Health_Lifestyle/Recipe/Yam/Images/ng-roastedyam.jpg", // Updated with provided link
+    videoId: "MvyyqiRQrjg",
+  },
 }
+
 
 export default function FoodDetailPage({ params }: { params: { id: string } }) {
   const [showVideo, setShowVideo] = useState(false)
