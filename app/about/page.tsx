@@ -8,7 +8,7 @@ export default function AboutPage() {
       <div className="space-y-6">
         <div className="relative rounded-lg overflow-hidden">
           <Image
-            src="/placeholder.svg?height=800&width=600"
+            src="https://i.pinimg.com/736x/f7/bb/29/f7bb2926858cab5aef6b742f26f6efb4.jpg"
             alt="Yoruba Cuisine"
             width={600}
             height={300}
