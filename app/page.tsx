@@ -12,45 +12,46 @@ export default function Home() {
       id: "soups",
       name: "Soups",
       description: "Traditional Yoruba soups with rich flavors and nutritional benefits",
-      image: "https://i.pinimg.com/1200x/96/3b/30/963b30ec3dcf94247814df27c98b62f8.jpg",
+      image: "https://allnigerianfoods.com/wp-content/uploads/making-efo-riro.jpg",
     },
     {
       id: "swallows",
       name: "Swallows",
       description: "Starchy accompaniments perfect for enjoying with Yoruba soups",
-      image: "https://allnigerianfoods.com/wp-content/uploads/Tuwo-shinkafa-swallow.jpg",
+      image: "https://yummieliciouz.com/wp-content/uploads/2023/04/how-to-make-amala-768x512.jpg",
     },
     {
       id: "snacks",
       name: "Snacks",
       description: "Delicious small bites and pastries for any time of day",
-      image: "https://i.pinimg.com/736x/fd/8d/3a/fd8d3affee7954cb9cb4cf66b1585667.jpg",
+      image: "https://i.pinimg.com/1200x/c3/98/b0/c398b02e7b36efd986be50d3822cbbc5.jpg",
     },
-  ]
+];
 
-  const featuredFoods = [
+const featuredFoods = [
     {
       id: "amala-ewedu",
       name: "Amala & Ewedu",
       description: "A classic Yoruba combination of yam flour swallow with jute leaf soup",
       image: "https://i.pinimg.com/736x/2e/b7/09/2eb709b27d19bd840aa61b5c0ea6d583.jpg",
-      videoId: "ogB0JsUyVv8", // Updated with proper video ID
+      videoId: "nOyRw2Vl7kc", // Updated video ID
     },
     {
       id: "jollof-rice",
       name: "Jollof Rice",
       description: "Spicy tomato rice dish popular throughout West Africa",
-      image: "https://i.pinimg.com/736x/09/f7/11/09f71105019cd8f7a0176abd77712bb1.jpg",
-      videoId: "TLjSBq-vt-I", // Updated Jollof Rice video ID from user's provided link
+      image: "https://i.pinimg.com/736x/a7/d4/92/a7d492607aab27346744244d02da29b6.jpg",
+      videoId: "TLjSBq-vt-I",
     },
     {
       id: "moin-moin",
       name: "Moin Moin",
       description: "Steamed bean pudding with peppers, onions, and spices",
-      image: "https://i.pinimg.com/736x/1b/73/61/1b7361e9b1610fd0ea74d0ba6a661e0f.jpg",
-      videoId: "JMWHSmMPQTI", // Updated Moin Moin video ID from user's provided link
+      image: "https://i.pinimg.com/1200x/10/8b/49/108b49028e9b0dcd75e1fcc00b7064da.jpg",
+      videoId: "JMWHSmMPQTI",
     },
-  ]
+];
+
 
   return (
     <main className="w-full px-4 py-6 mt-16">

@@ -19,14 +19,14 @@ const categoryData = {
         name: "Egusi",
         description: "Melon seed soup with vegetables, meat, and fish",
         image: "https://i.ibb.co/20MhNr6M/egusi-soup-1-500x500.webp?height=800&width=600",
-        videoId: "XeZJlxAsP18&t",
+        videoId: "jd0N6D2Tstc", // Updated video ID
       },
       {
         id: "ewedu",
         name: "Ewedu",
         description: "Jute leaf soup often served with gbegiri and amala",
         image: "https://allnigerianfoods.com/wp-content/uploads/2015/04/ewedu-soup.jpg",
-        videoId: "ogB0JsUyVv8",
+        videoId: "Xh2FkIYOq8w", // Updated video ID
       },
       {
         id: "gbegiri",
@@ -40,7 +40,7 @@ const categoryData = {
         name: "Ila Asepo",
         description: "Okra soup with assorted meats and fish",
         image: "https://www.myactivekitchen.com/wp-content/uploads/2017/04/stewed-okra-5.jpg",
-        videoId: "ZHBaPcJ_C44",
+        videoId: "57Gi3VctBkk", // Updated video ID
       },
       {
         id: "ogbono",
@@ -143,7 +143,7 @@ const categoryData = {
         id: "coconut-rice",
         name: "Coconut Rice",
         description: "Rice cooked with coconut milk and spices",
-        image: "https://i.pinimg.com/736x/30/07/41/3007413793be74c835ef5ca9a8fa814c.jpg",
+        image: "https://i.pinimg.com/736x/30/07/41/3007413793be74c835ef5ca9a8fa8141c.jpg",
         videoId: "CHYTUzyhgbE",
       },
     ],
@@ -232,14 +232,14 @@ const categoryData = {
         id: "fura-da-nono",
         name: "Fura da Nono",
         description: "Millet balls with yogurt and spices",
-        image: "https://www.nigeriantravelsmagazine.com/wp-content/uploads/2024/10/Picture4.png", // Image updated
+        image: "https://www.nigeriantravelsmagazine.com/wp-content/uploads/2024/10/Picture4.png",
         videoId: "0_kWAVqGkF0",
       },
       {
         id: "palm-wine",
         name: "Palm Wine",
         description: "Traditional fermented palm sap with a sweet taste",
-        image: "https://www.emaketa.com/wp-content/uploads/2025/05/palm-wine.jpg", // Image updated
+        image: "https://www.emaketa.com/wp-content/uploads/2025/05/palm-wine.jpg",
         videoId: "gFNDtYZnl74",
       },
       {
@@ -259,40 +259,41 @@ const categoryData = {
         id: "asun",
         name: "Asun",
         description: "Spicy grilled goat meat with peppers and onions",
-        image: "https://lowcarbafrica.com/wp-content/uploads/2019/09/Asun-recipe-IG-1.jpg", // Image updated
+        image: "https://lowcarbafrica.com/wp-content/uploads/2019/09/Asun-recipe-IG-1.jpg",
         videoId: "iM6rU990DFA",
       },
       {
         id: "ipekere",
         name: "Ipekere",
         description: "Plantain chips with a crispy texture",
-        image: "https://pan-african.net/wp-content/uploads/2021/04/Plantain-chips-768x512.jpg", // Image updated
+        image: "https://pan-african.net/wp-content/uploads/2021/04/Plantain-chips-768x512.jpg",
         videoId: "9AxWnAQiK4A",
       },
       {
         id: "adun",
         name: "Adun",
         description: "Coconut candy with a sweet, tropical flavor",
-        image: "https://9jafoodie.com/wp-content/uploads/2013/01/Aadun-600x398.jpg", // Image updated
+        image: "https://9jafoodie.com/wp-content/uploads/2013/01/Aadun-600x398.jpg",
         videoId: "-Xr_I8-2jyY",
       },
       {
         id: "kilishi",
         name: "Kilishi",
         description: "Spiced dried meat with a chewy texture",
-        image: "https://www.allnigerianrecipes.com/wp-content/uploads/2019/04/kilishi.jpg", // Image updated
+        image: "https://www.allnigerianrecipes.com/wp-content/uploads/2019/04/kilishi.jpg",
         videoId: "_uluACxidDk",
       },
       {
         id: "isu-sisun",
         name: "Isu Sisun",
         description: "Roasted yam often served with pepper sauce",
-        image: "https://www.nigeriagalleria.com/Health_Lifestyle/Recipe/Yam/Images/ng-roastedyam.jpg", // Image updated
+        image: "https://www.nigeriagalleria.com/Health_Lifestyle/Recipe/Yam/Images/ng-roastedyam.jpg",
         videoId: "MvyyqiRQrjg",
       },
     ],
   },
 }
+
 
 export default function CategoryPage({ params }: { params: { category: string } }) {
   const category = categoryData[params.category as keyof typeof categoryData]

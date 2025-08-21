@@ -56,7 +56,7 @@ const foodData: FoodData = {
     culturalSignificance:
       "Efo Riro is more than just a dish in Yoruba culture; it represents hospitality and community. It's often prepared for family gatherings and celebrations, symbolizing abundance and prosperity. The soup is considered a complete meal and is frequently served to guests as a sign of respect and care. In Yoruba tradition, the ability to prepare a good Efo Riro is seen as a mark of culinary skill.",
     image: "https://allnigerianfoods.com/wp-content/uploads/making-efo-riro.jpg",
-    videoId: "lxCY5fObe30", // Updated to match your last provided list
+    videoId: "lxCY5fObe30",
   },
   egusi: {
     name: "Egusi Soup",
@@ -106,8 +106,8 @@ const foodData: FoodData = {
     },
     culturalSignificance:
       "Egusi Soup is a symbol of abundance and prosperity in Nigerian culture. It's often served at important celebrations and gatherings, and is considered a dish of honor for special guests. The soup represents the diversity of Nigerian cuisine, as different regions have their own variations and preparation methods. In many Nigerian households, egusi soup is prepared for Sunday meals and special occasions.",
-    image: "https://allnigerianfoods.com/wp-content/uploads/egusi_soup_pot-768x512.jpg", // Updated with provided link
-    videoId: "YQq4ido7lQs",
+    image: "https://allnigerianfoods.com/wp-content/uploads/egusi_soup_pot-768x512.jpg",
+    videoId: "jd0N6D2Tstc", // Updated video ID
   },
   ewedu: {
     name: "Ewedu",
@@ -147,7 +147,7 @@ const foodData: FoodData = {
     culturalSignificance:
       "Ewedu soup is deeply embedded in Yoruba culture and is considered a symbol of tradition and heritage. It's an essential component of the Abula meal, which is served at weddings, naming ceremonies, and other important celebrations. The preparation method, especially the traditional beating with ijabe, is passed down through generations and represents the preservation of cultural practices.",
     image: "https://allnigerianfoods.com/wp-content/uploads/2015/04/ewedu-soup.jpg",
-    videoId: "ogB0JsUyVv8",
+    videoId: "Xh2FkIYOq8w", // Updated video ID
   },
   gbegiri: {
     name: "Gbegiri Soup",
@@ -232,7 +232,7 @@ const foodData: FoodData = {
     culturalSignificance:
       "Ila Asepo represents the ingenuity of Yoruba cooking, where simple ingredients are transformed into flavorful, nutritious meals. It's often prepared by mothers as a quick, healthy meal for the family and is associated with home cooking and maternal care. The soup is also significant in traditional medicine, as okra is believed to have various health benefits.",
     image: "https://www.myactivekitchen.com/wp-content/uploads/2017/04/stewed-okra-5.jpg",
-    videoId: "ZHBaPcJ_C44", // Updated to match your last provided list
+    videoId: "57Gi3VctBkk", // Updated video ID
   },
   ogbono: {
     name: "Ogbono Soup",
@@ -274,7 +274,7 @@ const foodData: FoodData = {
     },
     culturalSignificance:
       "Ogbono soup holds special significance in Nigerian culture as a symbol of unity and sharing. The communal nature of eating from a shared pot of ogbono with swallow represents togetherness and family bonds. It's often prepared for special occasions and is considered a dish that brings people together.",
-    image: "https://allnigerianfoods.com/wp-content/uploads/pot-of-ogbono-soup.jpg", // Updated to match your categoryData
+    image: "https://allnigerianfoods.com/wp-content/uploads/pot-of-ogbono-soup.jpg",
     videoId: "PH-G3ukBbAc",
   },
   "obe-ata": {
@@ -369,8 +369,8 @@ const foodData: FoodData = {
     ingredients: [
       "3 cups of long-grain parboiled rice",
       "6 large ripe tomatoes",
-      "3 red bell peppers (tatashe)",
-      "2-3 scotch bonnet peppers (ata rodo) - adjust to taste",
+      "3 red bell peppers (tatashe), blended",
+      "2-3 scotch bonnet peppers (ata rodo), blended (adjust to taste)",
       "2 large onions",
       "1/3 cup vegetable oil",
       "2 tablespoons tomato paste",
@@ -455,8 +455,8 @@ const foodData: FoodData = {
     },
     culturalSignificance:
       "Amala & Ewedu is the cornerstone of Yoruba cuisine and represents cultural identity and tradition. This combination is essential at Yoruba weddings, naming ceremonies, and festivals. It symbolizes unity and completeness, often served to honor guests and celebrate important occasions. The pairing demonstrates the Yoruba philosophy of balance in both nutrition and flavor.",
-    image: "/placeholder.svg?height=800&width=600&text=Amala+and+Ewedu+Combination",
-    videoId: "ogB0JsUyVv8", // Using Ewedu video for the combination
+    image: "https://i.pinimg.com/736x/2e/b7/09/2eb709b27d19bd840aa61b5c0ea6d583.jpg",
+    videoId: "nOyRw2Vl7kc", // Updated video ID
   },
   "moin-moin": {
     name: "Moin Moin",
@@ -483,10 +483,10 @@ const foodData: FoodData = {
     ],
     instructions: [
       "Soak and peel the beans. This is crucial for a smooth texture.",
-      "Combine the peeled beans, roughly chopped onion, and scotch bonnet peppers in a blender. Add a few tablespoons of water if necessary to help blend, but keep the mixture as thick as possible.",
-      "Blend until very smooth and creamy. The smoother the batter, the lighter the Akara.",
-      "Pour the batter into a large bowl. Using a stand mixer, hand mixer, or by hand with a whisk, beat the batter vigorously for 10-15 minutes until it is light, fluffy, and has significantly increased in volume. This step is essential for airy Akara.",
-      "Stir in salt to taste. Do not overmix after adding salt.",
+      "Blend the peeled beans with red bell peppers, scotch bonnet peppers, and onion until very smooth. Add fish stock or water gradually to aid blending.",
+      "Pour the blended mixture into a large bowl. Add vegetable oil (if using), seasoning cubes, and salt. Mix thoroughly.",
+      "Stir the batter vigorously for about 5-10 minutes to incorporate air, making the moin moin light and fluffy.",
+      "If adding flaked fish, sliced eggs, or corned beef, gently fold them into the batter.",
       "Prepare your steaming containers (foil cups, ramekins, or wrapped leaves). Lightly grease them if not using leaves.",
       "Pour the moin moin batter into the prepared containers, filling them about two-thirds full.",
       "Arrange the containers in a steamer basket or a pot with a little water at the bottom (ensure water doesn't touch the containers).",
@@ -975,7 +975,7 @@ const foodData: FoodData = {
       "Vegetable oil for deep frying",
     ],
     instructions: [
-      "In a large bowl, whisk together the flour, baking powder, ground nutmeg, and salt. Set aside.",
+      "In a large bowl, combine the flour, baking powder, ground nutmeg, and salt. Mix well.",
       "In a separate bowl, cream together the softened butter and sugar until light and fluffy.",
       "Beat in the eggs one at a time, ensuring each is fully incorporated before adding the next.",
       "Gradually add the dry ingredients to the wet ingredients, alternating with the milk. Mix until a firm, non-sticky dough forms. You might not need all the milk.",
@@ -1023,7 +1023,7 @@ const foodData: FoodData = {
       "Heat vegetable oil in a deep pot or frying pan over medium-high heat. The oil should be hot enough (around 350-375°F / 175-190°C) to deep-fry the yam (around 350-375°F / 175-190°C).",
       "Carefully add the yam pieces to the hot oil in batches, ensuring not to overcrowd the pot. Overcrowding will reduce the oil temperature and make the yam soggy.",
       "Fry, turning occasionally, until the yam pieces are golden brown and crispy on the outside, and cooked through and tender on the inside (about 5-8 minutes per batch, depending on size).",
-      "Remove the fried yam with a slotted spoon and place on a wire rack lined with paper towels to drain excess oil.",
+      "Remove with a slotted spoon and place on a wire rack lined with paper towels to drain excess oil.",
       "Serve hot, typically with a spicy pepper sauce (Ata Dindin), stew, or fried eggs.",
     ],
     nutritionalInfo: {
@@ -1464,7 +1464,7 @@ const foodData: FoodData = {
       "Once the mixture is thick and sticky and pulls away from the sides of the pot, remove from heat.",
       "Quickly spoon the hot mixture onto a parchment-lined baking sheet or a greased flat surface. Spread it evenly to your desired thickness.",
       "While still warm, use a greased knife or pastry cutter to cut the mixture into squares, rectangles, or diamond shapes.",
-      "Allow the Adun to cool completely and harden before breaking apart and storing in an airtight container.",
+      "Allow to cool completely before storing in an airtight container.",
     ],
     nutritionalInfo: {
       calories: "120 per serving (2 pieces)",
@@ -1555,10 +1555,11 @@ const foodData: FoodData = {
     },
     culturalSignificance:
       "Isu Sisun (Roasted Yam) is a cherished traditional snack and street food in Nigeria, symbolizing simplicity, sustenance, and direct connection to agricultural heritage. It's a common sight at local markets and roadside stalls, embodying the authentic flavors of grassroots Nigerian cuisine. Its presence reflects traditional cooking methods and offers a comforting taste of home, making it a beloved, accessible treat for many.",
-    image: "https://www.nigeriagalleria.com/Health_Lifestyle/Recipe/Yam/Images/ng-roastedyam.jpg", // Updated with provided link
+    image: "https://www.nigeriagalleria.com/Health_Lifestyle/Recipe/Yam/Images/ng-roastedyam.jpg",
     videoId: "MvyyqiRQrjg",
   },
-}
+};
+
 
 
 export default function FoodDetailPage({ params }: { params: { id: string } }) {
