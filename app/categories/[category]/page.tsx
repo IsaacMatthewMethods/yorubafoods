@@ -33,7 +33,7 @@ const categoryData = {
         name: "Gbegiri",
         description: "Bean soup often paired with ewedu and amala",
         image: "https://www.allnigerianrecipes.com/wp-content/uploads/2019/03/gbegiri-soup.jpg",
-        videoId: "FlZaMMtwgKfJ-f4Q",
+        videoId: "SNNdCLI0Buw",
       },
       {
         id: "ila-asepo",

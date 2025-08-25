@@ -188,7 +188,7 @@ const foodData: FoodData = {
     culturalSignificance:
       "Gbegiri soup is a cornerstone of Yoruba culinary tradition and represents the sophisticated nature of Yoruba cuisine. As part of the Abula combination, it's served at the most important celebrations including weddings, festivals, and religious ceremonies. The soup symbolizes abundance and prosperity, and its preparation is considered an art form that showcases the cook's skill and cultural knowledge.",
     image: "https://www.allnigerianrecipes.com/wp-content/uploads/2019/03/gbegiri-soup.jpg",
-    videoId: "4EgTUHViaRU",
+    videoId: "SNNdCLI0Buw",
   },
   "ila-asepo": {
     name: "Ila Asepo",
